@@ -1,0 +1,3387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXPLORE KARNATAKA – Discover the Beauty of Karnataka</title>
+  <meta name="description" content="Discover Karnataka – One Journey, Endless Stories. Explore breathtaking landscapes, ancient UNESCO heritage, pristine waterfalls, misty hill stations, and rich royal culinary delights.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50: '#f2f8f4',
+              100: '#e1f0e6',
+              200: '#c5e2d0',
+              300: '#9acdb1',
+              400: '#67b08d',
+              500: '#3d946d',
+              600: '#2b7755',
+              700: '#225f44',
+              800: '#1b4d37',
+              900: '#153f2e',
+              950: '#0b2319'
+            },
+            earth: {
+              50: '#faf6f0',
+              100: '#f3ece0',
+              200: '#e6d8c2',
+              300: '#d5bfa0',
+              400: '#bfa17c',
+              500: '#a8845e',
+              600: '#8c6846',
+              700: '#725137',
+              800: '#5c412e',
+              900: '#4a3528'
+            },
+            gold: {
+              50: '#fdfbf2',
+              100: '#faf5df',
+              200: '#f4e9bf',
+              300: '#ecd795',
+              400: '#e2bf65',
+              500: '#d4af37',
+              600: '#b89028',
+              700: '#947021',
+              800: '#795820',
+              900: '#664a1f'
+            },
+            cream: {
+              50: '#fffef9',
+              100: '#faf7ed',
+              200: '#f5efdc',
+              300: '#ebe1c3',
+              400: '#ded0a5'
+            }
+          },
+          fontFamily: {
+            royal: ['Cinzel', 'Playfair Display', 'Georgia', 'serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Styles -->
+  <style>
+/* Karnataka Tourism Premium Theme Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-forest-dark: #122b1c;
+  --color-forest-primary: #1e4d30;
+  --color-forest-light: #2b7244;
+  --color-gold-accent: #d4af37;
+  --color-gold-light: #f5b041;
+  --color-earth-brown: #582f0e;
+  --color-cream-bg: #faf7f0;
+  --color-cream-card: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #faf7f0;
+  color: #1a2a1f;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede2;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b7244;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e4d30;
+}
+
+/* Serif Headings */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-royal {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.05em;
+}
+
+/* Glassmorphism */
+.glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(220, 210, 190, 0.5);
+}
+
+.glass-dark {
+  background: rgba(18, 43, 28, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Golden gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa8012 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-forest-gradient {
+  background: linear-gradient(135deg, #1e4d30 0%, #2b7244 50%, #449d63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Golden border shimmer */
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35);
+}
+
+.hero-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 34, 22, 0.65) 0%,
+    rgba(18, 43, 28, 0.82) 65%,
+    rgba(10, 25, 16, 0.96) 100%
+  );
+}
+
+/* Smooth card transitions */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(18, 43, 28, 0.15), 0 0 1px 1px rgba(212, 175, 55, 0.2);
+}
+
+/* Pulse animation for highlights */
+@keyframes subtlePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.88; transform: scale(1.02); }
+}
+.pulse-subtle {
+  animation: subtlePulse 4s infinite ease-in-out;
+}
+
+/* Lightbox backdrop animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+</style>
+
+  <!-- React 18, ReactDOM 18 & Babel Standalone -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Karnataka Tourism Data -->
+  <script>
+// Karnataka Tourism Comprehensive Data Source
+window.KARNATAKA_DATA = {
+  districts: [
+    "All Districts",
+    "Bagalkot",
+    "Ballari",
+    "Belagavi",
+    "Bengaluru Rural",
+    "Bengaluru Urban",
+    "Bidar",
+    "Chamarajanagar",
+    "Chikkaballapur",
+    "Chikkamagaluru",
+    "Chitradurga",
+    "Dakshina Kannada",
+    "Davanagere",
+    "Dharwad",
+    "Gadag",
+    "Hassan",
+    "Haveri",
+    "Kalaburagi",
+    "Kodagu",
+    "Kolar",
+    "Koppal",
+    "Mandya",
+    "Mysuru",
+    "Raichur",
+    "Ramanagara",
+    "Shivamogga",
+    "Tumakuru",
+    "Udupi",
+    "Uttara Kannada",
+    "Vijayanagara",
+    "Vijayapura",
+    "Yadgir"
+  ],
+
+  categories: [
+    { id: "all", name: "All Experiences", icon: "Compass" },
+    { id: "historical", name: "Historical Places", icon: "Landmark" },
+    { id: "waterfalls", name: "Waterfalls", icon: "Droplets" },
+    { id: "hillstations", name: "Hill Stations", icon: "Mountain" },
+    { id: "beaches", name: "Beaches & Coast", icon: "Sun" },
+    { id: "temples", name: "Sacred Temples", icon: "Flame" },
+    { id: "nature", name: "Nature & Wildlife", icon: "Trees" }
+  ],
+
+  destinations: [
+    {
+      id: "mysore-palace",
+      name: "Mysore Palace",
+      district: "Mysuru",
+      category: "historical",
+      tagline: "The Crown Jewel of the Wodeyars",
+      shortDesc: "World-renowned Indo-Saracenic royal palace glowing with over 100,000 golden bulbs during celebrations.",
+      longDesc: "The Mysore Palace, also known as Amba Vilas Palace, was the official residence of the Wadiyar dynasty. Designed by British architect Henry Irwin, its ornate interiors feature stained-glass ceilings, carved rosewood doors, ivory inlay work, and the opulent Golden Throne. On Sundays and during the world-famous Mysuru Dasara, the palace exterior is illuminated by nearly 100,000 light bulbs in a mesmerizing spectacle.",
+      bestTime: "October to March",
+      approxBudget: "₹2,500 – ₹4,000 / day",
+      image: "https://images.unsplash.com/photo-1600100397608-f010f444f470?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.9,
+      reviewsCount: "14.2k",
+      highlights: ["Illumination on Sunday evenings", "Kalyana Mantapa (Marriage Pavilion)", "Durbar Hall & Golden Throne", "Dasara Festival Grandeur"],
+      timings: "10:00 AM – 5:30 PM (Daily)",
+      entryFee: "₹100 (Adults), ₹50 (Children), Foreigners ₹300",
+      howToReach: "Mysuru Junction Railway Station (2 km); Kempegowda Airport Bengaluru (170 km); regular high-speed Vande Bharat trains."
+    },
+    {
+      id: "hampi",
+      name: "Hampi",
+      district: "Vijayanagara",
+      category: "historical",
+      tagline: "The Forgotten UNESCO Golden Empire",
+      shortDesc: "Vast open-air museum of giant boulders, majestic ruins, and the iconic stone chariot of the Vijayanagara Empire.",
+      longDesc: "Set along the banks of the Tungabhadra River, Hampi was the prosperous capital of the Vijayanagara Empire in the 14th to 16th centuries. Spread across 4,100 hectares of fantastical boulder-strewn landscapes, it showcases over 1,600 surviving monuments including the Virupaksha Temple, the Stone Chariot in the Vittala Temple, Lotus Mahal, and the royal Elephant Stables.",
+      bestTime: "November to February",
+      approxBudget: "₹2,000 – ₹3,500 / day",
+      image: "https://images.unsplash.com/photo-1600100397937-67c87c093a74?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.95,
+      reviewsCount: "19.8k",
+      highlights: ["Iconic Stone Chariot (Vittala Temple)", "Musical Pillars & Virupaksha Shrine", "Hemakuta & Matanga Hill Sunsets", "Coracle boat rides on Tungabhadra"],
+      timings: "6:00 AM – 6:00 PM",
+      entryFee: "₹40 (Indians), ₹600 (Foreigners) for Vittala & Zenana enclosure",
+      howToReach: "Nearest railway station is Hosapete (13 km); Jindal Vijayanagar Airport (35 km) or Hubballi Airport (145 km)."
+    },
+    {
+      id: "coorg",
+      name: "Coorg (Kodagu)",
+      district: "Kodagu",
+      category: "hillstations",
+      tagline: "The Scotland of India",
+      shortDesc: "Misty highlands covered in aromatic coffee plantations, cascading waterfalls, and rich Kodava martial culture.",
+      longDesc: "Perched along the Western Ghats, Coorg is celebrated for its lush rolling hills, sprawling coffee and cardamom estates, spice gardens, and tranquil homestays. Visitors can trek through the Brahmagiri hills, taste authentic Kodava Pandi curry, visit the Tibetan Golden Temple at Bylakuppe, and listen to the thunderous roar of Abbey and Iruppu falls.",
+      bestTime: "September to March",
+      approxBudget: "₹3,500 – ₹6,000 / day",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.85,
+      reviewsCount: "11.6k",
+      highlights: ["Coffee plantation walking tours", "Namdroling Golden Temple Bylakuppe", "Raja's Seat sunset point", "Dubare Elephant Camp"],
+      timings: "Open year-round; plantation tours 9 AM – 5 PM",
+      entryFee: "Free for hills; specific sites ₹20 – ₹100",
+      howToReach: "Mangaluru Airport (140 km) or Kannur Airport (90 km); well connected by scenic mountain roads from Mysuru (120 km)."
+    },
+    {
+      id: "gokarna",
+      name: "Gokarna",
+      district: "Uttara Kannada",
+      category: "beaches",
+      tagline: "Where Serene Coastline Meets Sacred Shrines",
+      shortDesc: "Idyllic coastal haven renowned for its holy Mahabaleshwar temple and unspoiled crescent-shaped Om & Kudle beaches.",
+      longDesc: "Gokarna provides a refreshing blend of spiritual devotion and bohemian coastal relaxation. Framed by rugged Sahyadri cliffs diving into the Arabian Sea, its beaches—Om Beach (naturally shaped like the sacred symbol ॐ), Kudle Beach, Half Moon Beach, and Paradise Beach—are linked by picturesque cliffside hiking trails.",
+      bestTime: "October to March",
+      approxBudget: "₹2,000 – ₹4,000 / day",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.8,
+      reviewsCount: "9.4k",
+      highlights: ["Om Beach cliff trek", "Atmalinga at Mahabaleshwar Temple", "Bioluminescence night sightings", "Beach shacks & fresh seafood"],
+      timings: "Temple: 6:00 AM – 12:30 PM & 5:00 PM – 8:00 PM; Beaches open 24/7",
+      entryFee: "Free entry",
+      howToReach: "Gokarna Road Railway Station (8 km); Goa Dabolim/Mopa Airport (140 km); well connected by NH66."
+    },
+    {
+      id: "chikmagalur",
+      name: "Chikmagalur",
+      district: "Chikkamagaluru",
+      category: "hillstations",
+      tagline: "The Coffee Cradle of India",
+      shortDesc: "Birthplace of Indian coffee boasting emerald hills, Mullayanagiri peak, and soothing mountain cloudscapes.",
+      longDesc: "Tucked inside the Baba Budangiri hills, Chikmagalur is where Baba Budan first planted 7 coffee beans smuggled from Yemen in 1670. Today, it is an emerald paradise famous for Mullayanagiri (Karnataka's highest peak at 1,930 m), cascading waterfalls, and cozy estate homestays perfumed with the scent of blossoming Arabica and Robusta.",
+      bestTime: "September to May",
+      approxBudget: "₹3,000 – ₹5,500 / day",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.88,
+      reviewsCount: "13.1k",
+      highlights: ["Mullayanagiri Peak sunrise trek", "Baba Budangiri shrines & caves", "Coffee tasting & processing tours", "Hebbe & Jhari Waterfalls"],
+      timings: "Hill viewpoints open sunrise to sunset",
+      entryFee: "Free access; jeep rides to peaks ₹1,500 – ₹2,500",
+      howToReach: "Mangaluru International Airport (150 km); Kadur Railway Station (40 km); 4.5 hours drive from Bengaluru."
+    },
+    {
+      id: "badami",
+      name: "Badami",
+      district: "Bagalkot",
+      category: "historical",
+      tagline: "The Red Sandstone Capital of the Early Chalukyas",
+      shortDesc: "Astonishing 6th-century rock-cut cave temples chiseled into rust-red cliffs surrounding the holy Agastya Lake.",
+      longDesc: "Badami (formerly Vatapi) was the magnificent regal capital of the Badami Chalukyas from 540 to 757 CE. The four monolithic rock-cut cave temples carved into dramatic red sandstone cliffs feature intricate carvings of Nataraja with 81 dancing poses, Vishnu avatars, and Jain tirthankaras, all reflecting peacefully in Agastya Lake beside the Bhutanatha Temples.",
+      bestTime: "October to March",
+      approxBudget: "₹1,800 – ₹3,200 / day",
+      image: "https://images.unsplash.com/photo-1626588137109-5c12079b3d9d?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.82,
+      reviewsCount: "7.9k",
+      highlights: ["Four rock-cut sandstone cave temples", "Bhutanatha Temple on Agastya Lake", "Badami Fort & Archaeological Museum", "Climbing the sandstone ravines"],
+      timings: "9:00 AM – 5:30 PM",
+      entryFee: "₹25 (Indians), ₹300 (Foreigners)",
+      howToReach: "Badami Railway Station (5 km); Hubballi Airport (105 km); Belagavi Airport (150 km)."
+    },
+    {
+      id: "udupi",
+      name: "Udupi",
+      district: "Udupi",
+      category: "temples",
+      tagline: "Spiritual Sanctum of Lord Krishna & Culinary Heritage",
+      shortDesc: "Sacred temple town renowned for its Kanakana Kindi window, pristine Malpe beach, and authentic Satvik cuisine.",
+      longDesc: "Founded by the 13th-century philosopher-saint Madhvacharya, Udupi revolves around the sacred Sri Krishna Matha where the Lord is worshipped through an ornate 9-holed silver window (Kanakana Kindi). Beyond divinity, Udupi has gifted the world iconic vegetarian cuisine and offers coastal treasures like Malpe Beach, St. Mary's volcanic columnar basalt islands, and Kaup lighthouse.",
+      bestTime: "October to April",
+      approxBudget: "₹2,200 – ₹3,800 / day",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.78,
+      reviewsCount: "10.4k",
+      highlights: ["Sri Krishna Matha & Kanakana Kindi", "St. Mary's Island basalt formations", "Kaup Lighthouse panoramic views", "Authentic Udupi vegetarian thali"],
+      timings: "Temple: 5:00 AM – 9:30 PM (Daily)",
+      entryFee: "Temple entry free; St. Mary's Ferry ₹300",
+      howToReach: "Udupi Railway Station on Konkan Railway; Mangaluru Airport (60 km)."
+    },
+    {
+      id: "jog-falls",
+      name: "Jog Falls",
+      district: "Shivamogga",
+      category: "waterfalls",
+      tagline: "India's Majestic Unsegmented Plunge",
+      shortDesc: "The Sharavathi River plunges 830 feet down in four thunderous cascades: Raja, Roarer, Rocket, and Rani.",
+      longDesc: "Dropping an astonishing 253 meters (830 feet), Jog Falls is the second-highest unsegmented plunge waterfall in India. Fed by the Sharavathi River, the cascade splits into four distinct personalities: Raja (grand, unbroken fall), Roarer (violent torrent hitting rocks), Rocket (high-speed jet), and Rani (delicate, dancing veil). A staircase of 1,400 steps leads adventurous visitors down to the misty foot of the abyss.",
+      bestTime: "July to November (Peak Monsoon)",
+      approxBudget: "₹1,800 – ₹3,000 / day",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.86,
+      reviewsCount: "15.3k",
+      highlights: ["View from British Bungalow & KSTDC viewpoint", "Laser light show in the evening", "Trek down the 1,400 steps to the base", "Rainbows shimmering in water spray"],
+      timings: "Viewpoints open 6:00 AM – 8:00 PM",
+      entryFee: "₹15 per person, Parking ₹50",
+      howToReach: "Talguppa Railway Station (14 km); Shivamogga Airport (100 km) or Hubballi Airport (160 km)."
+    },
+    {
+      id: "murudeshwar",
+      name: "Murudeshwar",
+      district: "Uttara Kannada",
+      category: "temples",
+      tagline: "The World's Second-Tallest Shiva Statue on the Sea",
+      shortDesc: "Colossal 123-foot Shiva statue and 20-storey Raja Gopura towering on a peninsula bounded by the Arabian Sea.",
+      longDesc: "Surrounded on three sides by the shimmering Arabian Sea, Murudeshwar is an awe-inspiring pilgrimage and coastal destination. The temple complex features a towering 123-foot statue of Lord Shiva, a 249-foot high Raja Gopura with a high-speed elevator taking visitors to the 18th floor for breathtaking 360-degree ocean views, and nearby Netrani Island, famous for scuba diving.",
+      bestTime: "October to May",
+      approxBudget: "₹2,500 – ₹4,500 / day",
+      image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.84,
+      reviewsCount: "12.8k",
+      highlights: ["123-foot Shiva statue overlooking ocean", "Elevator to 18th floor of Raja Gopura", "Scuba diving & snorkeling at Netrani Island", "Sunset walks along Murudeshwar Beach"],
+      timings: "Temple: 3:00 AM – 1:00 PM & 3:00 PM – 8:00 PM",
+      entryFee: "Temple free; Gopura elevator ₹10",
+      howToReach: "Murudeshwar Railway Station (2 km); Mangaluru Airport (160 km) or Goa Airport (200 km)."
+    },
+    {
+      id: "belur",
+      name: "Belur (Chennakeshava Temple)",
+      district: "Hassan",
+      category: "historical",
+      tagline: "The UNESCO Star of Hoysala Sculptural Brilliance",
+      shortDesc: "12th-century soapstone masterpiece with impossibly intricate bracket figures (Madanikas) and celestial carvings.",
+      longDesc: "Belur served as the first capital of the Hoysala dynasty. Commissioned by King Vishnuvardhana in 1117 CE to commemorate his victory over the Cholas, the Chennakeshava Temple took 103 years and three generations of master craftsmen to complete. Built from soft chloritic schist (soapstone), its walls depict over 10,000 intricately carved figures, including the celebrated Madanikas (bracket damsels).",
+      bestTime: "October to March",
+      approxBudget: "₹2,000 – ₹3,500 / day",
+      image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.91,
+      reviewsCount: "8.7k",
+      highlights: ["42 celebrated Madanika bracket figures", "Darpana Sundari (Lady with the Mirror)", "Gravity pillar (Deepa Stambha)", "Star-shaped platform architecture"],
+      timings: "7:30 AM – 6:30 PM",
+      entryFee: "Free entry; authorized guides recommended",
+      howToReach: "Hassan Junction (38 km); 4 hours drive from Bengaluru (220 km) via NH75."
+    },
+    {
+      id: "halebidu",
+      name: "Halebidu (Hoysaleswara Temple)",
+      district: "Hassan",
+      category: "historical",
+      tagline: "The Zenith of Hoysala Relic Carvings",
+      shortDesc: "Twin-temple dedicated to Shiva, adorned with endless friezes of elephants, lions, swans, and epic battle scenes.",
+      longDesc: "Halebidu, earlier known as Dorasamudra, was the regal seat of the Hoysala Empire. The 12th-century Hoysaleswara Temple, designated a UNESCO World Heritage Site in 2023, is celebrated for its staggering outer friezes carved with bands of 1,248 charging elephants, galloping horses, makaras, and intricate scenes from the Mahabharata and Ramayana, where no two sculptures are identical.",
+      bestTime: "October to March",
+      approxBudget: "₹2,000 – ₹3,500 / day",
+      image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.92,
+      reviewsCount: "8.1k",
+      highlights: ["UNESCO World Heritage listed (2023)", "Endless narrative friezes with zero repeats", "Twin Nandi pavilions chiseled from single blocks", "Dwarapalakas (door guardians) with lace-like jewels"],
+      timings: "6:30 AM – 6:30 PM",
+      entryFee: "Free entry; ASI museum ₹5",
+      howToReach: "16 km from Belur; Hassan Railway Station (31 km); Bengaluru Airport (225 km)."
+    },
+    {
+      id: "bengaluru-palace",
+      name: "Bengaluru Palace",
+      district: "Bengaluru Urban",
+      category: "historical",
+      tagline: "Tudor Magnificence in the Silicon Heart",
+      shortDesc: "Charming 19th-century royal palace modeled after England's Windsor Castle, featuring fortified towers and royal regalia.",
+      longDesc: "Built in 1878 by Chamarajendra Wadiyar X, Bengaluru Palace stands as a rare specimen of Tudor-style architecture in South India. Featuring crenellated ramparts, floral motifs, stained glass, wood carvings, and lush gardens, it houses rare Victorian paintings by Raja Ravi Varma, hunting trophies, and royal memorabilia right in the heart of Bengaluru.",
+      bestTime: "Year-round (Best Oct–Feb)",
+      approxBudget: "₹2,500 – ₹5,000 / day",
+      image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.65,
+      reviewsCount: "16.5k",
+      highlights: ["Tudor-style wooden architecture & battlements", "Raja Ravi Varma paintings collection", "Audio-guided heritage walk through royal rooms", "Sprawling Palace Grounds for premier events"],
+      timings: "10:00 AM – 5:30 PM",
+      entryFee: "₹240 (Indians), ₹460 (Foreigners)",
+      howToReach: "Krantivira Sangolli Rayanna (Bengaluru City) Railway Station (5 km); Kempegowda Airport (30 km)."
+    },
+    {
+      id: "bandipur-safari",
+      name: "Bandipur National Park",
+      district: "Chamarajanagar",
+      category: "nature",
+      tagline: "Prime Tiger & Elephant Habitat in the Nilgiri Biosphere",
+      shortDesc: "Vast protected deciduous forest teaming with Bengal tigers, Indian leopards, wild elephants, and spotted deer.",
+      longDesc: "Part of the UNESCO Nilgiri Biosphere Reserve and once the hunting ground of the Mysore Maharaja, Bandipur spans 874 square kilometers of pristine dry deciduous forest. It holds one of the highest densities of wild tigers and Asiatic elephants in Asia, offering thrilling open-top safari drives through golden teak canopies.",
+      bestTime: "October to May",
+      approxBudget: "₹4,000 – ₹8,000 / day",
+      image: "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.81,
+      reviewsCount: "9.2k",
+      highlights: ["Tiger & Leopard jungle safaris", "Gaur (Indian Bison) & wild elephants herds", "Jungle Lodges & Resorts eco-stays", "Himavad Gopalaswamy Betta hill temple"],
+      timings: "Safaris: 6:15 AM – 9:00 AM & 3:15 PM – 6:00 PM",
+      entryFee: "Bus Safari ₹350; Gypsy Safari ₹3,500+",
+      howToReach: "Mysuru Railway Station (80 km); Coimbatore Airport (125 km) or Bengaluru Airport (250 km)."
+    },
+    {
+      id: "dandeli",
+      name: "Dandeli Wildlife & Adventure",
+      district: "Uttara Kannada",
+      category: "nature",
+      tagline: "The White-Water Adventure Hub of South India",
+      shortDesc: "Dense riverine jungle renowned for roaring Kali River rafting, Hornbill birdwatching, and black panthers.",
+      longDesc: "Nestled along the Kali River in the Western Ghats, Dandeli is Karnataka's undisputed capital for adventure tourism. From adrenaline-pumping Grade 3 white-water rafting, kayaking, and natural jacuzzi baths to jungle trekking and spotting the elusive Black Panther in Anshi National Park, Dandeli is an eco-explorer's wonderland.",
+      bestTime: "October to May",
+      approxBudget: "₹2,500 – ₹5,000 / day",
+      image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1000&q=80",
+      rating: 4.79,
+      reviewsCount: "8.3k",
+      highlights: ["Kali River white-water rafting", "Syntheri Rock volcanic formation", "Hornbill bird sanctuary", "Kayaking & ziplining across canopy"],
+      timings: "Rafting batches: 8:30 AM & 1:30 PM",
+      entryFee: "Rafting ₹1,200 – ₹1,800 per person",
+      howToReach: "Alnavar (32 km) or Londa (48 km) railway stations; Hubballi Airport (75 km)."
+    }
+  ],
+
+  historicalPlaces: [
+    {
+      id: "hist-hampi",
+      name: "Hampi Monuments",
+      location: "Vijayanagara District",
+      era: "14th – 16th Century CE",
+      dynasty: "Vijayanagara Empire (Harihara, Bukka & Krishnadevaraya)",
+      style: "Vijayanagara Imperial Architecture",
+      image: "https://images.unsplash.com/photo-1600100397937-67c87c093a74?auto=format&fit=crop&w=1000&q=80",
+      overview: "Declared a UNESCO World Heritage site, Hampi was once the second largest city in medieval times after Beijing, trading rubies and diamonds on its grand bazaar streets.",
+      architecturalFeats: "Iconic stone-wheeled Garuda Chariot, musical granite pillars producing notes of Indian instruments, multi-tiered Gopuras, and the subterranean Shiva temple.",
+      interestingFacts: [
+        "Portuguese travellers described Hampi's bazaars selling diamonds, pearls, and emeralds by the kilogram.",
+        "The Vittala Temple's 56 musical pillars emit distinct musical frequencies when gently tapped.",
+        "Monolithic statues include the 6.7m high monolithic Lakshmi Narasimha and the gigantic Kadalekalu Ganesha."
+      ]
+    },
+    {
+      id: "hist-mysore",
+      name: "Mysore Palace (Amba Vilas)",
+      location: "Mysuru District",
+      era: "1897 – 1912 CE",
+      dynasty: "Wadiyar Dynasty",
+      style: "Indo-Saracenic (Blend of Hindu, Mughal, Rajput, and Gothic)",
+      image: "https://images.unsplash.com/photo-1600100397608-f010f444f470?auto=format&fit=crop&w=1000&q=80",
+      overview: "One of the most visited monuments in India, this three-storied stone palace with marble domes and a 145-foot five-story tower stands as a testament to princely Karnataka.",
+      architecturalFeats: "Octagonal Kalyana Mantapa with Belgian stained-glass peacock dome, teak ceilings, carved solid brass gates, and the magnificent 750-kg solid gold Howdah.",
+      interestingFacts: [
+        "The palace is illuminated by exactly 97,000 to 100,000 incandescent bulbs on special occasions and Sundays.",
+        "It houses the legendary 200 kg Golden Throne (Chinnada Simhasana) assembled only during Dasara.",
+        "Over 6 million visitors tour the palace halls annually, rivaling the Taj Mahal in visitor footfall."
+      ]
+    },
+    {
+      id: "hist-gol-gumbaz",
+      name: "Gol Gumbaz",
+      location: "Vijayapura (Bijapur) District",
+      era: "1626 – 1656 CE",
+      dynasty: "Adil Shahi Dynasty (Mohammed Adil Shah)",
+      style: "Deccan Sultanate / Indo-Islamic",
+      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1000&q=80",
+      overview: "The majestic mausoleum of Mohammed Adil Shah boasts the second largest dome in the world unsupported by pillars, surpassed only by St. Peter's Basilica in Rome.",
+      architecturalFeats: "A colossal semi-circular dome with an external diameter of 44 meters, supported on eight intersecting arches, featuring eight-storey octagonal minarets at the four corners.",
+      interestingFacts: [
+        "The Whispering Gallery echoes even the faintest whisper up to 11 times across a span of 38 meters.",
+        "The dome was engineered without any central pillars or modern scaffolding using ingenious interlocking stone arches.",
+        "A piece of meteorite known as 'Bijli Patthar' is hung above the main entrance as a protective talisman against lightning."
+      ]
+    },
+    {
+      id: "hist-badami",
+      name: "Badami Cave Temples",
+      location: "Bagalkot District",
+      era: "6th – 8th Century CE",
+      dynasty: "Chalukyas of Badami (Pulakeshin I & Kirtivarman I)",
+      style: "Chalukyan Rock-Cut Monolithic Architecture",
+      image: "https://images.unsplash.com/photo-1626588137109-5c12079b3d9d?auto=format&fit=crop&w=1000&q=80",
+      overview: "A cliffside complex of four ornate rock-cut shrines carved into golden-red sandstone cliffs overlooking the sacred waters of the Agastya Lake.",
+      architecturalFeats: "Intricately carved columned verandahs (mukha-mandapa), sanctums hollowed out of living rock, and magnificent bas-reliefs of Nataraja, Varaha, and Trivikrama.",
+      interestingFacts: [
+        "Cave 1 features the 18-armed dancing Shiva (Nataraja) demonstrating 81 unique Bharatnatyam mudras.",
+        "Cave 3 is the largest and most intricately sculpted, commissioned in 578 CE by King Mangalesha.",
+        "The caves transition chronologically between Vedic deities, Vishnu manifestations, and Jain Thirthankaras."
+      ]
+    },
+    {
+      id: "hist-aihole",
+      name: "Aihole Temple Complex",
+      location: "Bagalkot District",
+      era: "5th – 8th Century CE",
+      dynasty: "Early Chalukyas",
+      style: "Cradle of Indian Temple Architecture (Experimental Nagara & Dravidian)",
+      image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1000&q=80",
+      overview: "Known as the premier laboratory of Indian rock architecture, Aihole contains over 120 stone temples where ancient master sculptors experimented with shrine designs.",
+      architecturalFeats: "The apsidal Durga Temple with its Buddhist chaitya-inspired horseshoe plan, Lad Khan Temple with sloping stone-slab roofs, and Ravana Phadi cave shrine.",
+      interestingFacts: [
+        "It is historically revered as the architectural workshop where both North Indian (Nagara) and South Indian (Dravidian) shikhara styles were born.",
+        "The famous Aihole Inscription of 634 CE by court poet Ravikirti celebrates Pulakeshin II's military victory over Emperor Harsha.",
+        "Master guilds known as the 'Ayyavole 500' governed maritime trade across Southeast Asia from here."
+      ]
+    },
+    {
+      id: "hist-pattadakal",
+      name: "Pattadakal Monuments",
+      location: "Bagalkot District",
+      era: "7th – 8th Century CE",
+      dynasty: "Chalukya Dynasty (Vikramaditya II)",
+      style: "UNESCO World Heritage Fusion of Dravidian & Nagara Architecture",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
+      overview: "The holy ceremonial coronation site of Chalukyan kings along the sacred Malaprabha River, Pattadakal represents the high-water mark of eclectic structural temple design.",
+      architecturalFeats: "The grand Virupaksha Temple, built by Queen Lokamahadevi to honor her husband's victory over the Pallavas of Kanchi, served as the blueprint for the Kailasa temple at Ellora.",
+      interestingFacts: [
+        "It was designated a UNESCO World Heritage site in 1987 for its harmonious synthesis of Northern and Southern temple architecture.",
+        "Ten major temples stand side-by-side, showcasing nine Hindu temples and one monumental Jain sanctuary.",
+        "Pattadakal literally means 'Stone of Coronation', where imperial heirs received their holy consecration."
+      ]
+    },
+    {
+      id: "hist-belur",
+      name: "Belur Chennakeshava Temple",
+      location: "Hassan District",
+      era: "1117 CE",
+      dynasty: "Hoysala Dynasty (King Vishnuvardhana)",
+      style: "Hoysala Soapstone Marvel",
+      image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
+      overview: "Built on the banks of the Yagachi River, this temple is the pinnacle of Hoysala artistic virtuosity, chiseled from fine-grained chloritic soapstone.",
+      architecturalFeats: "The star-shaped stellate plinth, pierced stone jali screens that temper sunlight, lathe-turned polished stone pillars, and 42 celestial Madanika brackets.",
+      interestingFacts: [
+        "The bracket figures (Shilabhalikas) are carved in such relief that one can pass a silk thread behind their jewelry and curls.",
+        "The temple took 103 years of continuous artistic labor across three generations of master sculptors like Dasoja and Chavana.",
+        "The Gravity Pillar (Deepa Stambha) stands 42 feet high on its own weight on a stone pedestal with a visible gap underneath."
+      ]
+    },
+    {
+      id: "hist-halebidu",
+      name: "Halebidu Hoysaleswara Temple",
+      location: "Hassan District",
+      era: "1121 – 1160 CE",
+      dynasty: "Hoysala Dynasty (King Vishnuvardhana & Narasimha I)",
+      style: "Dravidian Hoysala Relic Art",
+      image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=1000&q=80",
+      overview: "The jewel of Hoysala capitals, this twin-shrine complex dedicated to Hoysaleswara and Shantaleswara is hailed for having the most elaborate friezes in all of Indian temple art.",
+      architecturalFeats: "Dvikuta (two-temple) plan on a jagged star plinth, two colossal monolith Nandis, and eight horizontal bands depicting 1,248 distinct elephants, lions, and scrollwork.",
+      interestingFacts: [
+        "Historian James Fergusson remarked that the temple exterior is 'probably unequaled by anything in the world for artistic richness'.",
+        "No two elephants among the 1,248 carved in the bottom frieze share the same pose or ornamentation.",
+        "It was inscribed as a UNESCO World Heritage Site in September 2023 under the Sacred Ensembles of the Hoysalas."
+      ]
+    },
+    {
+      id: "hist-srirangapatna",
+      name: "Srirangapatna Fort & Island",
+      location: "Mandya District",
+      era: "9th – 18th Century CE",
+      dynasty: "Ganga, Vijayanagara & Kingdom of Mysore (Hyder Ali & Tipu Sultan)",
+      style: "Fortified Island / Indo-Islamic & Hoysala",
+      image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1000&q=80",
+      overview: "Encircled by the twin branches of the sacred Kaveri River, this historic river island was the fortified de facto capital of the 'Tiger of Mysore', Tipu Sultan.",
+      architecturalFeats: "Dariya Daulat Bagh (Summer Palace) made entirely of teakwood with fresco-covered walls, the formidable stone fort ramparts, and the Ranganathaswamy temple.",
+      interestingFacts: [
+        "Tipu Sultan launched the world's first iron-cased military rocket artillery against British forces from this island fortress.",
+        "The Dariya Daulat Bagh contains no stone pillars; it is constructed purely of teakwood adorned with gold-leaf frescoes.",
+        "The island houses the Gumbaz, the marble-and-hornblende mausoleum where Tipu Sultan, Hyder Ali, and Fakhr-un-Nisa rest."
+      ]
+    }
+  ],
+
+  waterfalls: [
+    {
+      id: "wf-jog",
+      name: "Jog Falls (Gerosoppa)",
+      river: "Sharavathi River",
+      location: "Sagara, Shivamogga District",
+      height: "253 meters (830 feet)",
+      season: "July to November",
+      accessibility: "Moderate (Viewing platform accessible; 1,400 steps to base)",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80",
+      description: "One of the highest unsegmented waterfalls in India. During monsoon, four separate streams—Raja, Roarer, Rocket, and Rani—unite into a roaring cloud of white spray that fills the entire valley.",
+      features: ["Four distinct cascade personalities", "Evening laser musical show", "Dense evergreen Sahyadri surroundings", "Linganamakki Dam upstream"]
+    },
+    {
+      id: "wf-abbey",
+      name: "Abbey Falls",
+      river: "Kaveri tributary",
+      location: "Madikeri, Kodagu District",
+      height: "21 meters (70 feet)",
+      season: "July to January",
+      accessibility: "Easy (Short paved 200m walkway through coffee plantations)",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80",
+      description: "Nestled within private coffee estates and spice gardens draped in wild pepper vines, Abbey Falls roars over boulders into a deep natural pool viewed from an iconic suspension bridge.",
+      features: ["Hanging suspension bridge viewpoint", "Coffee & cardamom plantation aroma", "Perfect family-friendly excursion", "Photogenic jungle setting"]
+    },
+    {
+      id: "wf-shivanasamudra",
+      name: "Shivanasamudra Falls",
+      river: "Kaveri River",
+      location: "Mandya / Chamarajanagar District",
+      height: "98 meters (320 feet)",
+      season: "July to October (Monsoon torrent)",
+      accessibility: "Easy to Moderate (Paved viewing plazas & watchtowers)",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1000&q=80",
+      description: "Here the sacred Kaveri River branches around the island of Shivanasamudra and plunges dramatically down into twin cataracts: the deep horsetail Gaganachukki and the tiered, segmented Bharachukki.",
+      features: ["Twin falls: Gaganachukki & Bharachukki", "Site of Asia's first hydroelectric power plant (1902)", "Coracle boat rides near Bharachukki base", "Ancient Ranganathaswamy temple nearby"]
+    },
+    {
+      id: "wf-hebbe",
+      name: "Hebbe Falls",
+      river: "Mountain springs",
+      location: "Kemmanagundi, Chikkamagaluru District",
+      height: "168 meters (551 feet)",
+      season: "August to February",
+      accessibility: "Challenging (4x4 Jeep ride + 1 km forest jungle trek)",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
+      description: "Tucked inside the Bhadra Tiger Reserve, Hebbe Falls cascades in two stages: Dodda Hebbe (Big Fall) and Chikka Hebbe (Small Fall). The waters are infused with herbs known for rejuvenating properties.",
+      features: ["Two-stage cascade (Dodda & Chikka Hebbe)", "Medicinal mineral-rich natural pool", "Exciting off-road jeep trail through coffee estates", "Dense biodiversity & birdwatching"]
+    },
+    {
+      id: "wf-iruppu",
+      name: "Iruppu Falls (Lakshmana Tirtha)",
+      river: "Lakshmana Tirtha River",
+      location: "Brahmagiri Range, Kodagu District",
+      height: "52 meters (170 feet)",
+      season: "August to January",
+      accessibility: "Moderate (Forest trail with steps through Brahmagiri sanctuary)",
+      image: "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&w=1000&q=80",
+      description: "Steeped in Ramayana lore, this sacred freshwater plunge cascades through the lush Brahmagiri hills. Pilgrims visit the ancient Rameshwara Shiva temple at the base to bathe in its sanctified waters.",
+      features: ["Sacred Ramayana pilgrimage legend", "Trailhead for Brahmagiri peak trek", "Abundant butterfly and orchid species", "Cool forest canopy walk"]
+    },
+    {
+      id: "wf-unchalli",
+      name: "Unchalli Falls (Lushington Falls)",
+      river: "Aghanashini River",
+      location: "Siddapur, Uttara Kannada District",
+      height: "116 meters (380 feet)",
+      season: "July to December",
+      accessibility: "Moderate to Challenging (1.5 km descending jungle path)",
+      image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1000&q=80",
+      description: "First documented by British collector J.D. Lushington in 1845, Unchalli is a wild, roaring cascade where the undammed Aghanashini River hurls itself into a sheer rock chasm, creating permanent misty rainbows.",
+      features: ["Wild undammed river ecosystem", "Dramatic sound audible 5 km away", "Sahyadri canopy observation platform", "Pristine, non-commercialized wilderness"]
+    },
+    {
+      id: "wf-sathodi",
+      name: "Sathodi Falls",
+      river: "Tributaries into Kodasalli Dam",
+      location: "Yellapur, Uttara Kannada District",
+      height: "15 meters (50 feet)",
+      season: "September to February",
+      accessibility: "Moderate (Picturesque 1 km forest walk through rock cleft)",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80",
+      description: "Referred to as the 'Mini Niagara of Uttara Kannada', multiple jungle streams converge to tumble down a box canyon over jagged black rocks into a serene, emerald natural pool.",
+      features: ["Rectangular box canyon formation", "Crystal-clear emerald swimming pool", "Tranquil Kodasalli backwaters nearby", "Photographer's secluded dream"]
+    }
+  ],
+
+  hillStations: [
+    {
+      id: "hs-coorg",
+      name: "Coorg (Kodagu)",
+      altitude: "1,150 m (3,770 ft)",
+      district: "Kodagu",
+      climate: "15°C – 24°C (Pleasant round the year)",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1000&q=80",
+      tagline: "The Misty Emerald Crown of the Western Ghats",
+      description: "Coorg captivates with undulating hills draped in coffee, silver oak trees intertwined with black pepper vines, cool mountain breezes, and warm Kodava hospitality.",
+      activities: ["Plantation homestays & coffee picking", "Trekking to Tadiandamol (1,748m)", "River rafting on Barapole river", "Golden Temple Tibetan Monastery visit"],
+      travelTip: "Book a plantation homestay rather than a commercial hotel to experience authentic home-cooked Kodava cuisine and private estate trails."
+    },
+    {
+      id: "hs-chikmagalur",
+      name: "Chikmagalur",
+      altitude: "1,090 m to 1,930 m",
+      district: "Chikkamagaluru",
+      climate: "14°C – 26°C (Chilly winter mornings)",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
+      tagline: "The Zenith of Peaks & Artisan Brews",
+      description: "Nestled in the foothills of the Chandra Drona range, Chikmagalur is a nature lover's paradise where morning mists roll across highest peaks, cascading streams, and wild orchids.",
+      activities: ["Scale Mullayanagiri, Karnataka's highest peak", "Explore Baba Budangiri caves & shrine", "Mountain cycling & estate quad biking", "Specialty coffee brewing workshops"],
+      travelTip: "Start your Mullayanagiri peak ascent before 6:30 AM to catch the breathtaking sea of clouds under the morning sun."
+    },
+    {
+      id: "hs-nandi",
+      name: "Nandi Hills",
+      altitude: "1,478 m (4,850 ft)",
+      district: "Chikkaballapur (60 km from Bengaluru)",
+      climate: "17°C – 28°C (Cool breezes)",
+      image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1000&q=80",
+      tagline: "The Historic Hilltop Above the Clouds",
+      description: "An ancient hill fortress that once served as Tipu Sultan's summer sanctuary, famous today as Bengaluru's favorite dawn getaway for watching clouds surge beneath the cliffs.",
+      activities: ["Sunrise cloud watching from Viewpoint", "Visiting Tipu's Drop & Tipu's Summer Lodge", "Bhoga Nandeeshwara Temple heritage walk", "Tandem paragliding & cycling up the 40 hairpins"],
+      travelTip: "Arrive at the base gates by 5:30 AM on weekends as vehicular entry is limited to protect hilltop tranquility."
+    },
+    {
+      id: "hs-agumbe",
+      name: "Agumbe",
+      altitude: "826 m (2,710 ft)",
+      district: "Shivamogga",
+      climate: "16°C – 25°C (High rainfall)",
+      image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1000&q=80",
+      tagline: "The Cherrapunji of the South & Rainforest Haven",
+      description: "A serene rainforest village nestled in the dense Western Ghats, renowned for receiving the highest rainfall in South India, the Agumbe Rainforest Research Station (ARRS), and Malgudi Days nostalgia.",
+      activities: ["Agumbe Sunset Point over the Arabian Sea horizon", "Spotting King Cobras & bioluminescent fungi", "Barkana & Onake Abbi waterfall treks", "Visiting Doddamane (the authentic Malgudi Days house)"],
+      travelTip: "Carry high-quality leech socks and waterproof camera cases if visiting during the dramatic monsoon months."
+    },
+    {
+      id: "hs-kemmanagundi",
+      name: "Kemmanagundi",
+      altitude: "1,434 m (4,705 ft)",
+      district: "Chikkamagaluru",
+      climate: "12°C – 23°C (Pleasantly cool)",
+      image: "https://images.unsplash.com/photo-1626588137109-5c12079b3d9d?auto=format&fit=crop&w=1000&q=80",
+      tagline: "Royal Hill Retreat of Mysore Maharajas",
+      description: "A picturesque hill station developed by Maharaja Krishnaraja Wodeyar IV as his royal summer escape. It is blessed with landscaped rose gardens, deep valleys, and breathtaking viewpoints.",
+      activities: ["Trek to Z Point for 360-degree gorge views", "Relax at Krishnarajendra Rose Garden", "Hike to Kalhatti & Hebbe Falls", "Bird watching in Shola grassland forests"],
+      travelTip: "The 3 km trail to Z Point along steep ridge paths offers some of the most sensational landscape photography in Karnataka."
+    },
+    {
+      id: "hs-sakleshpur",
+      name: "Sakleshpur",
+      altitude: "956 m (3,136 ft)",
+      district: "Hassan",
+      climate: "18°C – 26°C (Balmy hill climate)",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80",
+      tagline: "The Unspoiled Green Paradise of Sahyadri",
+      description: "Framed by the Hemavathi River and carpeted with cardamom, cinnamon, and pepper estates, Sakleshpur is famous for the star-shaped Manjarabad Fort built by Tipu Sultan.",
+      activities: ["Explore the eight-pointed star Manjarabad Fort", "Green Route railway track & bridge trek", "Camping along the Bisle Ghat viewpoint", "Off-road 4x4 trails to Murkannu Gudda"],
+      travelTip: "Stand in the center of Manjarabad Fort at noon to witness the acoustic and symmetrical precision of 18th-century French military design."
+    },
+    {
+      id: "hs-kudremukh",
+      name: "Kudremukh",
+      altitude: "1,894 m (6,214 ft)",
+      district: "Chikkamagaluru",
+      climate: "10°C – 22°C (Misty & crisp)",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80",
+      tagline: "The Horse-Faced Emerald Wilderness",
+      description: "Named after its iconic horse-face shaped summit, Kudremukh features vast rolling green shola grasslands that resemble Irish countryside nestled under tropical skies.",
+      activities: ["Trek to Kudremukh Peak with forest guide", "Witness Kadambi & Hanuman Gundi waterfalls", "Wildlife spotting in Kudremukh National Park", "Photography along the mist-draped shola ridges"],
+      travelTip: "Forest department permits are strictly mandatory for the peak trek; only 50 trekkers are permitted per day to preserve fragile ecology."
+    }
+  ],
+
+  foods: [
+    {
+      id: "food-mysore-dosa",
+      name: "Mysore Masala Dosa",
+      region: "Old Mysore / Mysuru & Bengaluru",
+      type: "Vegetarian",
+      badge: "Iconic Classic",
+      image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80",
+      description: "Crispy on the outside, fluffy inside fermented rice-lentil crepe slathered generously with fiery red garlic-chilli chutney, dolloped with fresh benne (butter), and stuffed with mildly spiced potato palya.",
+      servedWith: "Coconut chutney, tangy sambar, and fresh churned white butter.",
+      whereToTry: "Mylari Hotel (Mysuru), Vidyarthi Bhavan (Bengaluru), CTR Shri Sagar (Bengaluru)."
+    },
+    {
+      id: "food-bisi-bele-bath",
+      name: "Bisi Bele Bath",
+      region: "Mysore Palace Heritage / Across Karnataka",
+      type: "Vegetarian",
+      badge: "Comfort Dish",
+      image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+      description: "Translating to 'Hot Lentil Rice', this nutritious one-pot royal dish slow-cooks rice, toor dal, tamarind pulp, and garden vegetables with a freshly stone-ground 16-spice aromatic blend roasted in pure ghee.",
+      servedWith: "Crisp potato crisps (chips), boondi, and cooling onion-cucumber raita.",
+      whereToTry: "MTR (Mavalli Tiffin Room), Maiyas, Traditional Mysore Palace weddings."
+    },
+    {
+      id: "food-ragi-mudde",
+      name: "Ragi Mudde with Saaru",
+      region: "South Karnataka (Mandya, Hassan, Mysuru)",
+      type: "Nutritional Staple",
+      badge: "Superfood",
+      image: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=800&q=80",
+      description: "Wholesome, steamed spheres of nutrient-dense finger millet (ragi) flour cooked with water. Swallowed rather than chewed, it is the ancestral energy staple of Karnataka's agrarian communities.",
+      servedWith: "Spicy Bassaru (strained dill greens soup), Mutton Chops saaru, or Soppina Saru.",
+      whereToTry: "Military hotels across Mandya, Hassan, and Bengaluru (Shivaji Military Hotel)."
+    },
+    {
+      id: "food-mysore-pak",
+      name: "Mysore Pak",
+      region: "Mysuru (Originated at Amba Vilas Palace)",
+      type: "Royal Dessert",
+      badge: "Royal Sweet",
+      image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+      description: "Invented in 1935 by palace royal chef Kakasura Madappa for Maharaja Krishnaraja Wodeyar, this legendary dessert combines roasted gram flour (besan), pure country ghee, and hot caramelized sugar syrup.",
+      servedWith: "Warm filter coffee.",
+      whereToTry: "Guru Sweets (run by Madappa's descendants in Devaraja Market, Mysuru), Anand Sweets."
+    },
+    {
+      id: "food-dharwad-peda",
+      name: "Dharwad Peda",
+      region: "Dharwad / North Karnataka",
+      type: "GI Tagged Sweet",
+      badge: "GI Tag Pedigree",
+      image: "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=800&q=80",
+      description: "A Geographical Indication (GI) tagged delicacy created by the Thakur family in the 19th century. Made by painstakingly caramelizing Dharwadi buffalo milk khowa over slow heat and coating in fine castor sugar.",
+      servedWith: "Enjoyed as a celebratory indulgence.",
+      whereToTry: "Line Bazaar Babu Singh Thakur Peda (Dharwad), Mishra Peda."
+    },
+    {
+      id: "food-maddur-vada",
+      name: "Maddur Vada",
+      region: "Maddur (Mandya District)",
+      type: "Snack / Tiffin",
+      badge: "Crispy Delight",
+      image: "https://images.unsplash.com/photo-1600100397608-f010f444f470?auto=format&fit=crop&w=800&q=80",
+      description: "Crunchy fritter created accidentally in 1917 at Maddur railway station for passengers on the Bengaluru-Mysuru line. Made of coarse semolina (rava), rice flour, sliced onions, curry leaves, and fried till golden brown.",
+      servedWith: "Spicy coconut chutney and piping hot tumbler of filter kaapi.",
+      whereToTry: "Maddur Tiffany's on Old Bengaluru-Mysuru Highway, Maddur Railway Station platform."
+    },
+    {
+      id: "food-neer-dosa",
+      name: "Neer Dosa",
+      region: "Coastal Karnataka / Tulu Nadu (Udupi & Mangaluru)",
+      type: "Vegetarian / Light Tiffin",
+      badge: "Coastal Classic",
+      image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+      description: "Translating to 'Water Dosa', these paper-thin, feather-soft, lacy crepes are made from non-fermented ground rice and water batter. They melt effortlessly in the mouth.",
+      servedWith: "Coconut chutney, jaggery mixed with grated coconut, or fiery fish/chicken curry.",
+      whereToTry: "Machali (Mangaluru), Mitra Samaj (Udupi), Coastal beach shacks."
+    },
+    {
+      id: "food-mangalorean-fish-curry",
+      name: "Mangalorean Fish Curry (Meen Gassi)",
+      region: "Mangaluru / Dakshina Kannada Coast",
+      type: "Seafood Non-Veg",
+      badge: "Coastal Specialty",
+      image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+      description: "Fresh Kingfish (Surmai) or Mackerel simmered in a silken, fiery orange gravy of ground coconut, roasted Byadgi red chillies, coriander seeds, and the sour tang of local Kudampuli (kokum).",
+      servedWith: "Steamed boiled rice (Kori Rotti) or warm Neer Dosa.",
+      whereToTry: "Giri Manja's (Mangaluru), Machali, Hotel Narayana near Bunder port."
+    },
+    {
+      id: "food-coorg-pandi-curry",
+      name: "Coorg Pandi Curry",
+      region: "Kodagu (Coorg Highlands)",
+      type: "Highland Specialty Non-Veg",
+      badge: "Kodava Heritage",
+      image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80",
+      description: "The crown jewel of Kodava festive feasts. Tender pork braised slowly with a dark, roasted masala of peppercorns, cumin, and the magical astringent sourness of Kachampuli (wild Garcinia cambogia vinegar).",
+      servedWith: "Steamed rice noodles (Kadambuttu / rice dumplings) or Akki Rotti.",
+      whereToTry: "Coorg Cuisine (Madikeri), Raintree Restaurant, authentic homestays in Virajpet."
+    },
+    {
+      id: "food-jolada-rotti",
+      name: "Jolada Rotti Oota",
+      region: "North Karnataka (Dharwad, Belagavi, Vijayapura)",
+      type: "Nutritious Traditional Meal",
+      badge: "Northern Pride",
+      image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+      description: "Thin, unleavened flatbreads made from stone-ground sorghum (jowar) flour, patted out deftly by hand and baked over high heat. Gluten-free and extraordinarily healthy.",
+      servedWith: "Yennegai (stuffed baby brinjals in peanut-sesame gravy), Jhunka, Shenga (peanut) chutney pudi, and fresh churned butter.",
+      whereToTry: "Kamath Rotti Mane, Basaveshwar Khanavali (Hubballi-Dharwad & Vijayapura)."
+    }
+  ],
+
+  gallery: [
+    {
+      id: "gal-1",
+      title: "Mysore Palace Night Illumination",
+      category: "monuments",
+      categoryName: "Monuments & Heritage",
+      location: "Mysuru",
+      image: "https://images.unsplash.com/photo-1600100397608-f010f444f470?auto=format&fit=crop&w=1200&q=80",
+      description: "The magnificent facade of Mysore Palace glowing like liquid gold with nearly 100,000 light bulbs during Sunday evening celebrations."
+    },
+    {
+      id: "gal-2",
+      title: "Stone Chariot at Vittala Temple",
+      category: "monuments",
+      categoryName: "Monuments & Heritage",
+      location: "Hampi, Vijayanagara",
+      image: "https://images.unsplash.com/photo-1600100397937-67c87c093a74?auto=format&fit=crop&w=1200&q=80",
+      description: "The iconic monolithic Stone Chariot dedicated to Garuda, symbolizing the timeless architectural apex of the Vijayanagara Empire."
+    },
+    {
+      id: "gal-3",
+      title: "Jog Falls in Peak Monsoon Thunder",
+      category: "waterfalls",
+      categoryName: "Waterfalls",
+      location: "Shivamogga",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      description: "The 830-foot plunge of the Sharavathi River cascading into the deep Sahyadri gorge enveloped in misty rainbows."
+    },
+    {
+      id: "gal-4",
+      title: "Misty Rolling Hills of Coorg",
+      category: "mountains",
+      categoryName: "Mountains & Hills",
+      location: "Kodagu",
+      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      description: "Sunrise clouds drifting over verdant coffee plantations and shola forests in the heart of the Western Ghats."
+    },
+    {
+      id: "gal-5",
+      title: "Sunset over Om Beach Cliffs",
+      category: "beaches",
+      categoryName: "Beaches & Coast",
+      location: "Gokarna, Uttara Kannada",
+      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      description: "Golden hour hues reflecting across the Arabian Sea against the distinctive twin crescent curves of Om Beach."
+    },
+    {
+      id: "gal-6",
+      title: "Badami Cave Temples & Agastya Lake",
+      category: "temples",
+      categoryName: "Sacred Temples",
+      location: "Badami, Bagalkot",
+      image: "https://images.unsplash.com/photo-1626588137109-5c12079b3d9d?auto=format&fit=crop&w=1200&q=80",
+      description: "Ancient 6th-century Chalukyan rock-cut sandstone sanctuaries overlooking the sacred Agastya water tank."
+    },
+    {
+      id: "gal-7",
+      title: "Mullayanagiri Clouds & Peaks",
+      category: "mountains",
+      categoryName: "Mountains & Hills",
+      location: "Chikkamagaluru",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      description: "Karnataka's highest mountain peak standing proud above an infinite sea of floating morning clouds."
+    },
+    {
+      id: "gal-8",
+      title: "Colossal Murudeshwar Shiva Statue",
+      category: "temples",
+      categoryName: "Sacred Temples",
+      location: "Uttara Kannada Coast",
+      image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=80",
+      description: "The 123-foot tall monolithic statue of Lord Shiva towering dramatically above the Arabian Sea."
+    },
+    {
+      id: "gal-9",
+      title: "Hoysala Soapstone Intricacy",
+      category: "monuments",
+      categoryName: "Monuments & Heritage",
+      location: "Belur & Halebidu",
+      image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+      description: "Centuries-old soapstone carvings of celestial dancers and epic battles executed with jewel-like precision."
+    },
+    {
+      id: "gal-10",
+      title: "Golden Crispy Mysore Masala Dosa",
+      category: "food",
+      categoryName: "Festivals & Food",
+      location: "Mysuru / Bengaluru",
+      image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=80",
+      description: "Traditional butter-roasted fermented crepe served with spicy red chutney, potato palya, and freshly ground coconut relish."
+    },
+    {
+      id: "gal-11",
+      title: "Bengaluru Palace Tudor Architecture",
+      category: "monuments",
+      categoryName: "Monuments & Heritage",
+      location: "Bengaluru",
+      image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80",
+      description: "Regal stone turrets and ivy-covered ramparts inspired by Windsor Castle right in the heart of Karnataka's capital."
+    },
+    {
+      id: "gal-12",
+      title: "St. Mary's Volcanic Basalt Columns",
+      category: "beaches",
+      categoryName: "Beaches & Coast",
+      location: "Malpe, Udupi",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      description: "Unique hexagonal basaltic rock formations created millions of years ago when Madagascar split from the Indian peninsula."
+    },
+    {
+      id: "gal-13",
+      title: "Tiger Safari in Bandipur",
+      category: "mountains",
+      categoryName: "Mountains & Hills",
+      location: "Chamarajanagar",
+      image: "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&w=1200&q=80",
+      description: "Royal Bengal Tiger prowling through the sun-dappled teak groves of the Nilgiri Biosphere Reserve."
+    },
+    {
+      id: "gal-14",
+      title: "Abbey Falls amidst Pepper Estates",
+      category: "waterfalls",
+      categoryName: "Waterfalls",
+      location: "Madikeri, Coorg",
+      image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+      description: "Cascading river tumbling over giant boulders framed by wild coffee branches and spice blossoms."
+    },
+    {
+      id: "gal-15",
+      title: "Traditional Bisi Bele Bath Feast",
+      category: "food",
+      categoryName: "Festivals & Food",
+      location: "Mysuru",
+      image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+      description: "Fragrant rice, lentils, and slow-cooked vegetables bathed in pure ghee and topped with roasted cashews."
+    },
+    {
+      id: "gal-16",
+      title: "Gol Gumbaz Whispering Dome",
+      category: "monuments",
+      categoryName: "Monuments & Heritage",
+      location: "Vijayapura",
+      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80",
+      description: "The immense circular dome rising above the dry Deccan plains, holding world-renowned acoustic wonders."
+    }
+  ],
+
+  travelGuide: {
+    seasons: [
+      {
+        title: "Winter (October to March)",
+        tag: "Best Time to Visit",
+        badgeColor: "bg-emerald-600 text-white",
+        temp: "15°C – 28°C",
+        desc: "Ideal across all regions. The weather is cool, crisp, and comfortable. Perfect for exploring Hampi's boulders, Mysore Palace Dasara celebrations, coastal beaches in Gokarna & Udupi, and wildlife safaris in Bandipur."
+      },
+      {
+        title: "Monsoon (July to September)",
+        tag: "Nature & Waterfalls Season",
+        badgeColor: "bg-teal-600 text-white",
+        temp: "18°C – 26°C",
+        desc: "The Western Ghats transform into an emerald wonderland. Waterfalls like Jog, Abbey, and Shivanasamudra roar at their maximum volume. Lush hill stations like Coorg, Agumbe, and Chikmagalur are wrapped in romantic mists."
+      },
+      {
+        title: "Summer (April to June)",
+        tag: "Highland Retreat Season",
+        badgeColor: "bg-amber-600 text-white",
+        temp: "24°C – 36°C",
+        desc: "Northern plains become hot, but highland hill stations like Kemmanagundi, Kudremukh, and Coorg remain refreshingly cool. Excellent for coffee plantation homestay escapes and early morning beach swims."
+      }
+    ],
+
+    transportation: [
+      {
+        mode: "Air Travel",
+        icon: "Plane",
+        details: "Kempegowda International Airport (BLR, Bengaluru) is the 3rd busiest in India with global connections. Domestic airports operate at Mangaluru (IXE), Hubballi (HBX), Belagavi (IXG), Mysuru (MYQ), Shivamogga (RQY), and Bidar (IXX)."
+      },
+      {
+        mode: "Railways",
+        icon: "Train",
+        details: "South Western Railway (SWR) connects every major district. High-speed Vande Bharat Express routes seamlessly connect Bengaluru with Mysuru, Hubballi-Dharwad, and Kalaburagi. Scenic Konkan Railway tracks run along the coast."
+      },
+      {
+        mode: "Roads & Highways",
+        icon: "Bus",
+        details: "Karnataka State Road Transport Corporation (KSRTC) operates award-winning Airavat Club Class multi-axle Volvos. Excellent 4 to 6-lane national expressways (NH44, NH48, NH75, NH66 coastal highway) make road trips a delight."
+      }
+    ],
+
+    stays: [
+      {
+        type: "Heritage Palaces & Mansions",
+        examples: "Lalitha Mahal Palace (Mysuru), Brijrama & heritage Havelis in Badami & Dharwad.",
+        idealFor: "Culture lovers & luxury travelers looking for royal hospitality."
+      },
+      {
+        type: "Coffee Estate Homestays",
+        examples: "Colonial-era bungalows and modern homestays in Chikmagalur, Coorg, and Sakleshpur.",
+        idealFor: "Families and slow travelers seeking authentic Kodava/Malnad home-cooked meals."
+      },
+      {
+        type: "Jungle Lodges & Resorts (JLR)",
+        examples: "Kabini River Lodge, Bandipur Safari Lodge, Kali Wilderness Camp Dandeli.",
+        idealFor: "Eco-conscious wildlife photographers, tiger safari enthusiasts, and adventurers."
+      },
+      {
+        type: "Coastal Shacks & Cliffside Resorts",
+        examples: "Beachfront villas in Gokarna (Kudle & Om Beach), Kaup & Malpe in Udupi.",
+        idealFor: "Backpackers, sunset gazers, and seafood lovers."
+      }
+    ],
+
+    safetyTips: [
+      "Monsoon Hiking: Always wear high-grip waterproof shoes and leech-resistant socks when trekking in Malnad / Western Ghats.",
+      "Temple Etiquette: Modest attire covering shoulders and knees is mandatory at active sacred temples (Sri Krishna Matha Udupi, Murudeshwar, Gokarna).",
+      "Hydration in North Karnataka: Northern heritage sites like Hampi and Badami involve extensive outdoor stone climbing; carry electrolyte water and sun hats.",
+      "Wildlife Zones: Strictly obey night driving curfews (9 PM – 6 AM) through Bandipur and Nagarhole Tiger Reserves to protect endangered wildlife."
+    ],
+
+    responsibleTourism: [
+      "Plastic-Free Karnataka: Single-use plastics are banned in all National Parks, waterfalls, and eco-sensitive reserves. Carry reusable steel bottles.",
+      "Support Local Artisan Heritage: Buy authentic Channapatna wooden toys, Ilkal and Mysore silk sarees, Bidriware metal crafts, and GI-tagged Dharwad pedas directly from local weavers and cooperatives.",
+      "Respect Ancient Stones: Never deface or carve names onto centuries-old UNESCO monuments in Hampi, Belur, or Badami."
+    ]
+  },
+
+  quickStats: [
+    { label: "Vibrant Districts", value: "31", icon: "MapPin" },
+    { label: "UNESCO World Heritage Sites", value: "3", icon: "Award" },
+    { label: "Arabian Sea Coastline", value: "320+ km", icon: "Sun" },
+    { label: "Majestic Waterfalls", value: "25+", icon: "Droplets" },
+    { label: "Recorded History", value: "1,500+ Yrs", icon: "Landmark" }
+  ]
+};
+
+</script>
+</head>
+<body class="bg-cream-100 text-forest-950 font-sans antialiased selection:bg-gold-500 selection:text-forest-950">
+  <div id="root">
+    <!-- Loading state placeholder -->
+    <div class="min-h-screen flex flex-col items-center justify-center bg-forest-950 text-cream-100">
+      <div class="w-16 h-16 border-4 border-gold-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+      <h1 class="font-royal text-2xl font-bold tracking-widest text-gold-400">EXPLORE KARNATAKA</h1>
+      <p class="text-forest-300 text-sm mt-2">Loading the Beauty of Karunadu...</p>
+    </div>
+  </div>
+
+  <!-- Main Application Script -->
+  <script type="text/babel">
+    const { useState, useEffect, useMemo, useRef } = React;
+
+    // Direct, ultra-fast SVG Icon Component supporting all Lucide Icons needed
+    const Icon = ({ name, className = "w-5 h-5", strokeWidth = 2, fill = "none" }) => {
+      const icons = {
+        Compass: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+          </svg>
+        ),
+        Landmark: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/>
+          </svg>
+        ),
+        Droplets: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.09 3 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+            <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/>
+          </svg>
+        ),
+        Mountain: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+          </svg>
+        ),
+        Sun: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+        ),
+        Flame: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+          </svg>
+        ),
+        Trees: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1.1-5.8V10a3 3 0 0 1 6 0z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-4 4.3a1 1 0 0 0 .8 1.7H10l-3 3.3a1 1 0 0 0 .7 1.7H8l-3 3.3a1 1 0 0 0 .7 1.7z"/>
+          </svg>
+        ),
+        Search: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        ),
+        Heart: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+        ),
+        Sparkles: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+            <path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>
+          </svg>
+        ),
+        MapPin: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+        ),
+        Calendar: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+        ),
+        DollarSign: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        ),
+        Award: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+          </svg>
+        ),
+        Star: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        ),
+        ArrowRight: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        ),
+        X: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        ),
+        ChevronRight: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        ),
+        ChevronLeft: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        ),
+        ChevronDown: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        ),
+        Check: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        ),
+        Calculator: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/>
+          </svg>
+        ),
+        Users: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        ),
+        Plane: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        ),
+        Train: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="m8 19-2 3"/><path d="m18 22-2-3"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/>
+          </svg>
+        ),
+        Bus: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M8 6v6"/><path d="M16 6v6"/><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/><path d="M20 12V8a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v4"/><circle cx="7" cy="18" r="1"/><circle cx="17" cy="18" r="1"/>
+          </svg>
+        ),
+        Car: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/>
+          </svg>
+        ),
+        Bed: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/>
+          </svg>
+        ),
+        Utensils: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M18 2v6a3 3 0 0 1-3 3 3 3 0 0 1-3-3V2"/><path d="M15 11v11"/><path d="M5 2v20"/><path d="M2 2h6v5c0 1.66-1.34 3-3 3s-3-1.34-3-3V2Z"/>
+          </svg>
+        ),
+        ShieldCheck: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+          </svg>
+        ),
+        Info: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+          </svg>
+        ),
+        ExternalLink: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        ),
+        Menu: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/>
+          </svg>
+        ),
+        Filter: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+          </svg>
+        ),
+        Share2: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+        ),
+        Maximize2: (
+          <svg className={className} fill={fill} stroke="currentColor" strokeWidth={strokeWidth} viewBox="0 0 24 24">
+            <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+          </svg>
+        )
+      };
+
+      return icons[name] || icons.Compass;
+    };
+
+    // Safe image loader with graceful fallback
+    const SafeImage = ({ src, alt, className = "", onClick = null }) => {
+      const fallbackSrc = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80";
+      const handleError = (e) => {
+        e.target.onerror = null;
+        e.target.src = fallbackSrc;
+      };
+      return (
+        <img
+          src={src}
+          alt={alt}
+          className={className}
+          loading="lazy"
+          onError={handleError}
+          onClick={onClick}
+        />
+      );
+    };
+
+    // Main App Component
+    function App() {
+      const data = window.KARNATAKA_DATA;
+
+      // State Management
+      const [searchQuery, setSearchQuery] = useState("");
+      const [selectedCategory, setSelectedCategory] = useState("all");
+      const [selectedDistrict, setSelectedDistrict] = useState("All Districts");
+      const [favorites, setFavorites] = useState(() => {
+        try {
+          const saved = localStorage.getItem("explore_karnataka_favorites");
+          return saved ? JSON.parse(saved) : ["mysore-palace", "hampi", "jog-falls"];
+        } catch (e) {
+          return ["mysore-palace", "hampi", "jog-falls"];
+        }
+      });
+      const [activeModal, setActiveModal] = useState(null);
+      const [surpriseModal, setSurpriseModal] = useState(null);
+      const [showFavoritesModal, setShowFavoritesModal] = useState(false);
+      const [lightboxImage, setLightboxImage] = useState(null);
+      const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+      const [activeGalleryTab, setActiveGalleryTab] = useState("all");
+      const [toastMessage, setToastMessage] = useState(null);
+
+      // Travel Budget Calculator State
+      const [budgetCalc, setBudgetCalc] = useState({
+        travellers: 2,
+        days: 4,
+        travelMode: "train", // flight, train, bus, cab
+        accommodation: "midrange", // budget, midrange, heritage, luxury
+        foodTier: "medium", // budget, medium, luxury
+        activityTier: "medium" // standard, medium, luxury
+      });
+
+      // Save favorites to localStorage
+      useEffect(() => {
+        try {
+          localStorage.setItem("explore_karnataka_favorites", JSON.stringify(favorites));
+        } catch (e) {
+          console.error("Failed to save to localStorage", e);
+        }
+      }, [favorites]);
+
+      // Toast notification helper
+      const showToast = (msg) => {
+        setToastMessage(msg);
+        setTimeout(() => setToastMessage(null), 3500);
+      };
+
+      // Toggle Favorites
+      const toggleFavorite = (id, name) => {
+        if (favorites.includes(id)) {
+          setFavorites(favorites.filter(favId => favId !== id));
+          showToast(`Removed "${name}" from your Favorites.`);
+        } else {
+          setFavorites([...favorites, id]);
+          showToast(`Added "${name}" to your Favorites ❤️`);
+        }
+      };
+
+      // Surprise Me Generator
+      const handleSurpriseMe = () => {
+        const pool = data.destinations;
+        const randomIndex = Math.floor(Math.random() * pool.length);
+        setSurpriseModal(pool[randomIndex]);
+      };
+
+      // Filtered Destinations
+      const filteredDestinations = useMemo(() => {
+        return data.destinations.filter(item => {
+          const matchesCategory = selectedCategory === "all" || item.category === selectedCategory;
+          const matchesDistrict = selectedDistrict === "All Districts" || item.district.toLowerCase() === selectedDistrict.toLowerCase();
+          const query = searchQuery.trim().toLowerCase();
+          const matchesSearch = !query || 
+            item.name.toLowerCase().includes(query) ||
+            item.district.toLowerCase().includes(query) ||
+            item.shortDesc.toLowerCase().includes(query) ||
+            item.tagline.toLowerCase().includes(query);
+
+          return matchesCategory && matchesDistrict && matchesSearch;
+        });
+      }, [data.destinations, selectedCategory, selectedDistrict, searchQuery]);
+
+      // Filtered Gallery Items
+      const filteredGallery = useMemo(() => {
+        if (activeGalleryTab === "all") return data.gallery;
+        return data.gallery.filter(item => item.category === activeGalleryTab);
+      }, [data.gallery, activeGalleryTab]);
+
+      // Budget Calculation Logic
+      const budgetResult = useMemo(() => {
+        const { travellers, days, travelMode, accommodation, foodTier, activityTier } = budgetCalc;
+
+        // Transport cost per person round-trip
+        const transportRates = {
+          flight: 6500,
+          train: 1400,
+          bus: 1800,
+          cab: 4000
+        };
+
+        // Room rate per night (assuming 2 persons per room)
+        const roomRates = {
+          budget: 1200,
+          midrange: 2800,
+          heritage: 6500,
+          luxury: 14000
+        };
+
+        // Food cost per person per day
+        const foodRates = {
+          budget: 450,
+          medium: 950,
+          luxury: 2000
+        };
+
+        // Activity cost per person per day
+        const activityRates = {
+          standard: 350,
+          medium: 1100,
+          luxury: 2500
+        };
+
+        const roomsNeeded = Math.ceil(travellers / 2);
+        const transportTotal = transportRates[travelMode] * travellers;
+        const accommodationTotal = roomRates[accommodation] * roomsNeeded * days;
+        const foodTotal = foodRates[foodTier] * travellers * days;
+        const activityTotal = activityRates[activityTier] * travellers * days;
+
+        const totalCost = transportTotal + accommodationTotal + foodTotal + activityTotal;
+        const perPersonCost = Math.round(totalCost / travellers);
+
+        return {
+          transportTotal,
+          accommodationTotal,
+          foodTotal,
+          activityTotal,
+          totalCost,
+          perPersonCost
+        };
+      }, [budgetCalc]);
+
+      // Reset All Filters
+      const resetFilters = () => {
+        setSelectedCategory("all");
+        setSelectedDistrict("All Districts");
+        setSearchQuery("");
+      };
+
+      return (
+        <div className="relative min-h-screen bg-[#faf8f2] text-forest-950 font-sans">
+          
+          {/* TOAST NOTIFICATION */}
+          {toastMessage && (
+            <div className="fixed bottom-6 right-6 z-50 animate-slide-up flex items-center gap-3 bg-forest-900 text-cream-50 px-5 py-3.5 rounded-2xl shadow-2xl border border-gold-500/40">
+              <Icon name="Sparkles" className="w-5 h-5 text-gold-400" />
+              <span className="text-sm font-medium tracking-wide">{toastMessage}</span>
+            </div>
+          )}
+
+          {/* 1. NAVIGATION BAR */}
+          <header className="sticky top-0 z-40 glass-header transition-all duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-20">
+                
+                {/* Brand Logo */}
+                <a href="#home" className="flex items-center gap-3.5 group">
+                  <div className="w-11 h-11 rounded-xl bg-forest-900 flex items-center justify-center border border-gold-500 shadow-md transition-transform group-hover:scale-105">
+                    <span className="text-xl">🛕</span>
+                  </div>
+                  <div>
+                    <span className="font-royal text-xl sm:text-2xl font-black tracking-wider text-forest-900 block leading-tight">
+                      EXPLORE <span className="text-gold-600">KARNATAKA</span>
+                    </span>
+                    <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-earth-700 uppercase">
+                      Discover • Experience • Explore
+                    </span>
+                  </div>
+                </a>
+
+                {/* Desktop Navigation Links */}
+                <nav className="hidden xl:flex items-center gap-6 text-sm font-semibold text-forest-900">
+                  <a href="#home" className="hover:text-gold-600 transition-colors py-1">Home</a>
+                  <a href="#destinations" className="hover:text-gold-600 transition-colors py-1">Destinations</a>
+                  <a href="#historical" className="hover:text-gold-600 transition-colors py-1">History</a>
+                  <a href="#waterfalls" className="hover:text-gold-600 transition-colors py-1">Waterfalls</a>
+                  <a href="#hillstations" className="hover:text-gold-600 transition-colors py-1">Hill Stations</a>
+                  <a href="#food" className="hover:text-gold-600 transition-colors py-1">Food</a>
+                  <a href="#gallery" className="hover:text-gold-600 transition-colors py-1">Gallery</a>
+                  <a href="#calculator" className="hover:text-gold-600 transition-colors py-1">Budget</a>
+                  <a href="#travel-info" className="hover:text-gold-600 transition-colors py-1">Travel Info</a>
+                </nav>
+
+                {/* Action Controls */}
+                <div className="flex items-center gap-2.5 sm:gap-4">
+                  
+                  {/* Surprise Me Button */}
+                  <button
+                    onClick={handleSurpriseMe}
+                    title="Random Destination Generator"
+                    className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-gold-500/15 text-earth-900 hover:bg-gold-500/25 border border-gold-500/50 text-xs font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95"
+                  >
+                    <Icon name="Sparkles" className="w-4 h-4 text-gold-600 animate-spin" />
+                    <span>Surprise Me!</span>
+                  </button>
+
+                  {/* Favorites Trigger Button */}
+                  <button
+                    onClick={() => setShowFavoritesModal(true)}
+                    className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-forest-50 text-forest-900 hover:bg-forest-100 border border-forest-200 transition-all hover:scale-105"
+                    title="View Saved Favorites"
+                    aria-label="Saved Destinations"
+                  >
+                    <Icon name="Heart" className={`w-5 h-5 ${favorites.length > 0 ? 'text-red-500 fill-red-500' : 'text-forest-700'}`} />
+                    {favorites.length > 0 && (
+                      <span className="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-pulse">
+                        {favorites.length}
+                      </span>
+                    )}
+                  </button>
+
+                  {/* Mobile Menu Hamburger */}
+                  <button
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    className="xl:hidden p-2 rounded-xl text-forest-900 hover:bg-forest-100 transition-colors"
+                    aria-label="Toggle Navigation Menu"
+                  >
+                    <Icon name={mobileMenuOpen ? "X" : "Menu"} className="w-6 h-6" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Dropdown Menu */}
+            {mobileMenuOpen && (
+              <div className="xl:hidden bg-cream-50 border-b border-earth-200 px-6 py-6 shadow-xl space-y-4 animate-slide-up">
+                <div className="grid grid-cols-2 gap-3 text-sm font-semibold">
+                  <a href="#home" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Home</a>
+                  <a href="#destinations" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Destinations</a>
+                  <a href="#historical" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">History & Heritage</a>
+                  <a href="#waterfalls" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Waterfalls</a>
+                  <a href="#hillstations" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Hill Stations</a>
+                  <a href="#food" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Famous Food</a>
+                  <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Image Gallery</a>
+                  <a href="#calculator" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Budget Calculator</a>
+                  <a href="#travel-info" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-lg hover:bg-forest-100 text-forest-900">Travel Information</a>
+                </div>
+
+                <div className="pt-3 border-t border-earth-200 flex items-center justify-between">
+                  <button
+                    onClick={() => { setMobileMenuOpen(false); handleSurpriseMe(); }}
+                    className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gold-500 text-forest-950 font-bold text-xs uppercase tracking-wider"
+                  >
+                    <Icon name="Sparkles" className="w-4 h-4" />
+                    <span>Surprise Destination</span>
+                  </button>
+                </div>
+              </div>
+            )}
+          </header>
+
+          {/* 2. HERO SECTION */}
+          <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+            {/* Background Image with Fallback and Parallax Effect */}
+            <div className="absolute inset-0 z-0">
+              <SafeImage
+                src="https://images.unsplash.com/photo-1600100397608-f010f444f470?auto=format&fit=crop&w=1920&q=80"
+                alt="Mysore Palace Karnataka"
+                className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000"
+              />
+              <div className="absolute inset-0 hero-gradient-overlay" />
+            </div>
+
+            {/* Hero Content */}
+            <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-cream-50">
+              
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-forest-900/80 border border-gold-500/60 backdrop-blur-md mb-6 animate-fade-in shadow-lg">
+                <span className="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+                <span className="text-xs sm:text-sm font-semibold tracking-widest text-gold-300 uppercase">
+                  Welcome to Karunadu • Heritage of the Deccan
+                </span>
+              </div>
+
+              {/* Main Headline */}
+              <h1 className="font-royal text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight sm:leading-none mb-6">
+                Discover Karnataka
+                <span className="block font-display italic font-normal text-2xl sm:text-4xl md:text-5xl text-gold-400 mt-2">
+                  One Journey, Endless Stories.
+                </span>
+              </h1>
+
+              {/* Subtitle */}
+              <p className="max-w-3xl mx-auto text-base sm:text-xl text-cream-200/90 font-light leading-relaxed mb-10">
+                Explore breathtaking landscapes, ancient UNESCO heritage, pristine cascading waterfalls, vibrant culinary traditions and unforgettable adventures across 31 rich districts.
+              </p>
+
+              {/* Interactive Search Bar in Hero */}
+              <div className="max-w-2xl mx-auto mb-10">
+                <div className="relative flex items-center bg-cream-50/95 backdrop-blur-md rounded-2xl shadow-2xl p-2 border-2 border-gold-500/70 focus-within:border-gold-500 transition-all">
+                  <div className="pl-3.5 pr-2 text-forest-700">
+                    <Icon name="Search" className="w-6 h-6" />
+                  </div>
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search tourist places in Karnataka... (e.g. Hampi, Coorg, Jog Falls)"
+                    className="w-full bg-transparent px-2 py-2.5 text-forest-950 placeholder-forest-700/60 font-medium text-sm sm:text-base focus:outline-none"
+                  />
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery("")}
+                      className="p-1.5 text-forest-600 hover:text-forest-900 mr-2"
+                      title="Clear search"
+                    >
+                      <Icon name="X" className="w-4 h-4" />
+                    </button>
+                  )}
+                  <a
+                    href="#destinations"
+                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-forest-800 hover:bg-forest-900 text-cream-50 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all hover:scale-105 active:scale-95 shadow-md flex-shrink-0"
+                  >
+                    <span>Search</span>
+                    <Icon name="ArrowRight" className="w-4 h-4" />
+                  </a>
+                </div>
+
+                {/* Popular Search Suggestions */}
+                <div className="flex flex-wrap items-center justify-center gap-2 mt-3 text-xs text-cream-300">
+                  <span className="font-semibold text-gold-400">Popular:</span>
+                  {["Mysore Palace", "Hampi", "Coorg", "Jog Falls", "Gokarna", "Belur", "Chikmagalur"].map((term) => (
+                    <button
+                      key={term}
+                      onClick={() => {
+                        setSearchQuery(term);
+                        const el = document.getElementById("destinations");
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="px-2.5 py-1 rounded-full bg-forest-900/60 hover:bg-gold-500/30 border border-gold-500/30 transition-colors"
+                    >
+                      {term}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Hero Action Buttons */}
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="#destinations"
+                  className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-forest-950 font-bold text-sm uppercase tracking-wider shadow-lg transition-all hover:scale-105 active:scale-95"
+                >
+                  Explore Destinations
+                </a>
+                <button
+                  onClick={handleSurpriseMe}
+                  className="px-7 py-3.5 rounded-xl bg-forest-900/80 hover:bg-forest-800 border border-gold-500/60 text-cream-100 font-semibold text-sm uppercase tracking-wider backdrop-blur-sm transition-all hover:scale-105"
+                >
+                  ✨ Surprise Me!
+                </button>
+                <a
+                  href="#calculator"
+                  className="px-7 py-3.5 rounded-xl bg-cream-50/10 hover:bg-cream-50/20 text-cream-100 border border-cream-200/30 font-semibold text-sm uppercase tracking-wider backdrop-blur-sm transition-all"
+                >
+                  Budget Calculator
+                </a>
+              </div>
+            </div>
+
+            {/* Bottom Wave Transition */}
+            <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-cream-100 to-transparent pointer-events-none" />
+          </section>
+
+          {/* 3. HIGHLIGHTS & STATS BAR */}
+          <section className="relative z-20 -mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-3xl shadow-xl border border-gold-500/30 p-6 md:p-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-earth-100">
+              {data.quickStats.map((stat, idx) => (
+                <div key={idx} className="flex flex-col items-center text-center pt-4 sm:pt-0">
+                  <div className="w-12 h-12 rounded-2xl bg-forest-50 text-forest-800 flex items-center justify-center mb-3 shadow-inner">
+                    <Icon name={stat.icon} className="w-6 h-6 text-gold-600" />
+                  </div>
+                  <span className="font-royal text-2xl sm:text-3xl font-extrabold text-forest-900">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs sm:text-sm font-medium text-earth-700 mt-1">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* 4. TOURIST DESTINATIONS SECTION (With Search, Category & 31 District Filter) */}
+          <section id="destinations" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            {/* Section Heading */}
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-xs sm:text-sm font-bold tracking-widest text-gold-600 uppercase">
+                Explore Karunadu
+              </span>
+              <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-950 mt-2 mb-4">
+                Popular Tourist Destinations
+              </h2>
+              <p className="text-earth-700 text-base sm:text-lg">
+                From ancient royal palaces and monolithic rock carvings to emerald hilltops and golden beaches, discover Karnataka's most celebrated treasures.
+              </p>
+            </div>
+
+            {/* Filter Bar Controls Container */}
+            <div className="bg-white rounded-3xl shadow-md border border-earth-200 p-6 mb-10 space-y-6">
+              
+              {/* Category Filter Chips */}
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-earth-700 mb-3 flex items-center gap-1.5">
+                  <Icon name="Filter" className="w-4 h-4 text-gold-600" />
+                  <span>Filter by Category:</span>
+                </label>
+                <div className="flex flex-wrap gap-2.5">
+                  {data.categories.map((cat) => (
+                    <button
+                      key={cat.id}
+                      onClick={() => setSelectedCategory(cat.id)}
+                      className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
+                        selectedCategory === cat.id
+                          ? 'bg-forest-800 text-cream-50 shadow-md scale-105'
+                          : 'bg-cream-50 text-forest-900 hover:bg-forest-100 border border-earth-200'
+                      }`}
+                    >
+                      <Icon name={cat.icon} className="w-4 h-4 text-gold-500" />
+                      <span>{cat.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* District-wise Selector (Karnataka's 31 Districts) + Live Search Input */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-earth-100">
+                
+                {/* 31 District Dropdown */}
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-earth-700 mb-2 flex items-center gap-1.5">
+                    <Icon name="MapPin" className="w-4 h-4 text-gold-600" />
+                    <span>Select Karnataka District (31 Districts):</span>
+                  </label>
+                  <div className="relative">
+                    <select
+                      value={selectedDistrict}
+                      onChange={(e) => setSelectedDistrict(e.target.value)}
+                      className="w-full appearance-none bg-cream-50 border border-earth-300 rounded-xl px-4 py-3 text-sm font-semibold text-forest-950 focus:outline-none focus:border-forest-700 pr-10 cursor-pointer shadow-sm"
+                    >
+                      {data.districts.map((dist) => (
+                        <option key={dist} value={dist}>
+                          {dist === "All Districts" ? "📍 All 31 Districts" : `📍 ${dist} District`}
+                        </option>
+                      ))}
+                    </select>
+                    <div className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-forest-700">
+                      <Icon name="ChevronDown" className="w-4 h-4" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Live Name Filter */}
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-earth-700 mb-2 flex items-center gap-1.5">
+                    <Icon name="Search" className="w-4 h-4 text-gold-600" />
+                    <span>Search Destinations by Name:</span>
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="Type destination name (e.g., Mysore, Hampi, Coorg)..."
+                      className="w-full bg-cream-50 border border-earth-300 rounded-xl px-4 py-3 text-sm text-forest-950 placeholder-earth-400 focus:outline-none focus:border-forest-700 pr-10 shadow-sm"
+                    />
+                    {searchQuery && (
+                      <button
+                        onClick={() => setSearchQuery("")}
+                        className="absolute right-3.5 top-1/2 -translate-y-1/2 text-earth-500 hover:text-earth-800"
+                        title="Clear search"
+                      >
+                        <Icon name="X" className="w-4 h-4" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Active Filter Indicators & Reset Option */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs text-earth-700">
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-forest-900">
+                    Showing {filteredDestinations.length} destination{filteredDestinations.length !== 1 ? 's' : ''}
+                  </span>
+                  {(selectedCategory !== "all" || selectedDistrict !== "All Districts" || searchQuery) && (
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-gold-100 text-gold-800 font-medium">
+                      Filtered
+                    </span>
+                  )}
+                </div>
+
+                {(selectedCategory !== "all" || selectedDistrict !== "All Districts" || searchQuery) && (
+                  <button
+                    onClick={resetFilters}
+                    className="text-xs font-bold text-forest-700 hover:text-forest-900 underline flex items-center gap-1"
+                  >
+                    <span>Reset All Filters</span>
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Destinations Grid */}
+            {filteredDestinations.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredDestinations.map((dest) => {
+                  const isFavorite = favorites.includes(dest.id);
+                  return (
+                    <div
+                      key={dest.id}
+                      className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-earth-200/80 hover-lift flex flex-col"
+                    >
+                      {/* Image Container with Badges */}
+                      <div className="relative h-60 w-full overflow-hidden bg-forest-950">
+                        <SafeImage
+                          src={dest.image}
+                          alt={dest.name}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-transparent to-black/30 pointer-events-none" />
+
+                        {/* District Badge */}
+                        <div className="absolute top-4 left-4 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-forest-900/90 text-gold-300 text-xs font-bold tracking-wide backdrop-blur-sm border border-gold-500/40">
+                          <Icon name="MapPin" className="w-3.5 h-3.5 text-gold-400" />
+                          <span>{dest.district}</span>
+                        </div>
+
+                        {/* Favorite Button */}
+                        <button
+                          onClick={() => toggleFavorite(dest.id, dest.name)}
+                          className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-forest-900 flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95"
+                          title={isFavorite ? "Remove from Favorites" : "Add to Favorites"}
+                          aria-label={`Favorite ${dest.name}`}
+                        >
+                          <Icon
+                            name="Heart"
+                            className={`w-5 h-5 ${isFavorite ? 'text-red-500 fill-red-500' : 'text-forest-700'}`}
+                          />
+                        </button>
+
+                        {/* Star Rating Badge */}
+                        <div className="absolute bottom-4 left-4 z-10 flex items-center gap-1 px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm text-white text-xs font-semibold">
+                          <Icon name="Star" className="w-3.5 h-3.5 text-gold-400 fill-gold-400" />
+                          <span>{dest.rating}</span>
+                          <span className="text-gray-300 text-[11px]">({dest.reviewsCount})</span>
+                        </div>
+                      </div>
+
+                      {/* Card Content */}
+                      <div className="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                          <div className="flex items-center justify-between gap-2 mb-2">
+                            <h3 className="font-royal text-xl font-bold text-forest-950 group-hover:text-forest-800 transition-colors">
+                              {dest.name}
+                            </h3>
+                          </div>
+                          
+                          <p className="text-xs font-semibold text-gold-700 uppercase tracking-wider mb-2.5">
+                            {dest.tagline}
+                          </p>
+
+                          <p className="text-earth-700 text-sm leading-relaxed mb-4 line-clamp-2">
+                            {dest.shortDesc}
+                          </p>
+
+                          {/* Quick Info Grid */}
+                          <div className="grid grid-cols-2 gap-2 py-3 border-y border-earth-100 text-xs text-earth-800 mb-4">
+                            <div className="flex items-center gap-1.5">
+                              <Icon name="Calendar" className="w-4 h-4 text-forest-600 flex-shrink-0" />
+                              <span className="truncate"><strong>Best:</strong> {dest.bestTime.split(' ')[0]}</span>
+                            </div>
+                            <div className="flex items-center gap-1.5">
+                              <Icon name="DollarSign" className="w-4 h-4 text-gold-600 flex-shrink-0" />
+                              <span className="truncate"><strong>Budget:</strong> {dest.approxBudget.split('–')[0]}</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Action Buttons */}
+                        <div className="flex items-center gap-3 pt-2">
+                          <button
+                            onClick={() => setActiveModal(dest)}
+                            className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-cream-50 font-bold text-xs uppercase tracking-wider transition-all hover:scale-102 active:scale-98 shadow-sm"
+                          >
+                            <span>Explore More</span>
+                            <Icon name="ChevronRight" className="w-3.5 h-3.5" />
+                          </button>
+
+                          <button
+                            onClick={() => toggleFavorite(dest.id, dest.name)}
+                            className={`p-2.5 rounded-xl border transition-all ${
+                              isFavorite
+                                ? 'bg-red-50 border-red-200 text-red-600'
+                                : 'bg-cream-50 border-earth-200 text-forest-800 hover:bg-forest-100'
+                            }`}
+                            title={isFavorite ? "Remove favorite" : "Save favorite"}
+                          >
+                            <Icon name="Heart" className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              /* Friendly Empty State */
+              <div className="text-center py-16 bg-white rounded-3xl shadow-sm border border-earth-200 p-8 max-w-lg mx-auto">
+                <div className="w-16 h-16 rounded-full bg-earth-100 text-earth-600 flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Search" className="w-8 h-8" />
+                </div>
+                <h3 className="font-royal text-xl font-bold text-forest-950 mb-2">No Destinations Found</h3>
+                <p className="text-earth-700 text-sm mb-6">
+                  We couldn't find any tourist places matching your current filters. Try resetting filters or searching with different keywords.
+                </p>
+                <button
+                  onClick={resetFilters}
+                  className="px-6 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-cream-50 font-semibold text-xs uppercase tracking-wider shadow-md transition-transform hover:scale-105"
+                >
+                  Reset All Filters
+                </button>
+              </div>
+            )}
+          </section>
+
+          {/* 5. HISTORICAL PLACES SECTION */}
+          <section id="historical" className="py-20 bg-forest-950 text-cream-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              
+              {/* Section Header */}
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <span className="text-xs sm:text-sm font-bold tracking-widest text-gold-400 uppercase">
+                  Echoes of Dynastic Grandeur
+                </span>
+                <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-cream-50 mt-2 mb-4">
+                  Historical Places of Karnataka
+                </h2>
+                <p className="text-forest-200 text-base sm:text-lg">
+                  Immerse yourself in stone-carved epics spanning 1,500 years of glorious dynasties—from the Chalukyas and Hoysalas to the Vijayanagara Empire and the Mysore Wadiyars.
+                </p>
+              </div>
+
+              {/* Historical Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {data.historicalPlaces.map((place) => (
+                  <div
+                    key={place.id}
+                    className="bg-forest-900/70 border border-gold-500/20 rounded-3xl overflow-hidden shadow-xl hover:border-gold-500/60 transition-all duration-300 flex flex-col justify-between"
+                  >
+                    <div>
+                      {/* Image */}
+                      <div className="relative h-56 w-full overflow-hidden">
+                        <SafeImage
+                          src={place.image}
+                          alt={place.name}
+                          className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-transparent to-black/40" />
+                        
+                        <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-forest-950/80 border border-gold-500/40 text-gold-300 text-xs font-semibold backdrop-blur-sm">
+                          {place.location}
+                        </div>
+
+                        <div className="absolute bottom-3 left-4 right-4">
+                          <span className="text-[11px] font-bold text-gold-400 uppercase tracking-wider block">
+                            {place.dynasty}
+                          </span>
+                          <h3 className="font-royal text-xl font-bold text-cream-50">
+                            {place.name}
+                          </h3>
+                        </div>
+                      </div>
+
+                      {/* Content Details */}
+                      <div className="p-6 space-y-4">
+                        <div className="flex items-center gap-2 text-xs text-forest-300 bg-forest-950/60 p-2.5 rounded-xl border border-forest-800">
+                          <Icon name="Landmark" className="w-4 h-4 text-gold-400 flex-shrink-0" />
+                          <span className="font-medium"><strong>Era & Style:</strong> {place.era} • {place.style}</span>
+                        </div>
+
+                        <p className="text-forest-200 text-sm leading-relaxed">
+                          {place.overview}
+                        </p>
+
+                        <div className="bg-forest-950/40 p-4 rounded-2xl border border-gold-500/15">
+                          <h4 className="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                            <Icon name="Award" className="w-3.5 h-3.5 text-gold-400" />
+                            <span>Architectural Feat:</span>
+                          </h4>
+                          <p className="text-xs text-forest-300 leading-normal">
+                            {place.architecturalFeats}
+                          </p>
+                        </div>
+
+                        {/* Fascinating Facts List */}
+                        <div>
+                          <h4 className="text-xs font-bold text-cream-100 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <Icon name="Sparkles" className="w-3.5 h-3.5 text-gold-400" />
+                            <span>Did You Know?</span>
+                          </h4>
+                          <ul className="space-y-1.5 text-xs text-forest-300">
+                            {place.interestingFacts.slice(0, 2).map((fact, fIdx) => (
+                              <li key={fIdx} className="flex items-start gap-2">
+                                <span className="text-gold-400 font-bold">•</span>
+                                <span>{fact}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6 pt-0">
+                      <a
+                        href="#destinations"
+                        onClick={() => setSearchQuery(place.name.split(' ')[0])}
+                        className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gold-500/20 hover:bg-gold-500/30 text-gold-300 hover:text-gold-200 border border-gold-500/40 text-xs font-bold uppercase tracking-wider transition-colors"
+                      >
+                        <span>View Travel Details</span>
+                        <Icon name="ArrowRight" className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* 6. WATERFALLS SECTION */}
+          <section id="waterfalls" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-xs sm:text-sm font-bold tracking-widest text-teal-700 uppercase">
+                Thunderous Cascades of the Western Ghats
+              </span>
+              <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-950 mt-2 mb-4">
+                Spectacular Waterfalls of Karnataka
+              </h2>
+              <p className="text-earth-700 text-base sm:text-lg">
+                Fed by monsoon clouds across the Sahyadri mountains, Karnataka's waterfalls plunge through evergreen gorges in majestic white torrents.
+              </p>
+            </div>
+
+            {/* Waterfall Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {data.waterfalls.map((wf) => (
+                <div
+                  key={wf.id}
+                  className="bg-white rounded-3xl overflow-hidden shadow-lg border border-earth-200 hover-lift flex flex-col justify-between"
+                >
+                  <div>
+                    {/* Big Landscape Image */}
+                    <div className="relative h-64 w-full overflow-hidden bg-forest-950">
+                      <SafeImage
+                        src={wf.image}
+                        alt={wf.name}
+                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                      
+                      {/* Height Badge */}
+                      <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-teal-600 text-white text-xs font-bold shadow-md flex items-center gap-1">
+                        <Icon name="Droplets" className="w-3.5 h-3.5 text-white" />
+                        <span>{wf.height}</span>
+                      </div>
+
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <span className="text-xs font-semibold text-teal-300 block mb-1">
+                          {wf.river}
+                        </span>
+                        <h3 className="font-royal text-2xl font-bold text-white">
+                          {wf.name}
+                        </h3>
+                        <p className="text-xs text-gray-200 mt-0.5">
+                          📍 {wf.location}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Waterfall Details */}
+                    <div className="p-6 space-y-4">
+                      <p className="text-earth-700 text-sm leading-relaxed">
+                        {wf.description}
+                      </p>
+
+                      <div className="grid grid-cols-2 gap-3 py-3 border-y border-earth-100 text-xs">
+                        <div className="space-y-1">
+                          <span className="font-bold text-forest-900 block">Best Visiting Season:</span>
+                          <span className="text-teal-700 font-semibold">{wf.season}</span>
+                        </div>
+                        <div className="space-y-1">
+                          <span className="font-bold text-forest-900 block">Accessibility:</span>
+                          <span className="text-earth-700">{wf.accessibility}</span>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="text-xs font-bold uppercase tracking-wider text-forest-900 mb-2">
+                          Key Highlights:
+                        </h4>
+                        <div className="flex flex-wrap gap-1.5">
+                          {wf.features.map((feat, fIdx) => (
+                            <span
+                              key={fIdx}
+                              className="text-[11px] px-2.5 py-1 rounded-lg bg-teal-50 text-teal-800 font-medium border border-teal-100"
+                            >
+                              ✓ {feat}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-6 pt-0">
+                    <button
+                      onClick={() => {
+                        const match = data.destinations.find(d => d.name.toLowerCase().includes(wf.name.split(' ')[0].toLowerCase()));
+                        if (match) setActiveModal(match);
+                        else showToast(`Water levels at ${wf.name} are peak between ${wf.season}.`);
+                      }}
+                      className="w-full py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-cream-50 text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
+                    >
+                      View Travel Guide
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* 7. HILL STATIONS SECTION */}
+          <section id="hillstations" className="py-20 bg-earth-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <span className="text-xs sm:text-sm font-bold tracking-widest text-forest-700 uppercase">
+                  Misty Peaks & Coffee Plantations
+                </span>
+                <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-950 mt-2 mb-4">
+                  Famous Hill Stations of Karnataka
+                </h2>
+                <p className="text-earth-800 text-base sm:text-lg">
+                  Escape into cloud-kissed mountain retreats perfumed with fresh coffee blossoms, rare shola grasslands, and breathtaking panoramic ridge vistas.
+                </p>
+              </div>
+
+              {/* Hill Station Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {data.hillStations.map((hs) => (
+                  <div
+                    key={hs.id}
+                    className="bg-white rounded-3xl overflow-hidden shadow-lg border border-earth-200/80 hover-lift flex flex-col justify-between"
+                  >
+                    <div>
+                      {/* Image */}
+                      <div className="relative h-60 w-full overflow-hidden bg-forest-950">
+                        <SafeImage
+                          src={hs.image}
+                          alt={hs.name}
+                          className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-forest-950/85 via-forest-950/20 to-transparent" />
+                        
+                        {/* Altitude Badge */}
+                        <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-forest-900/90 text-gold-300 text-xs font-bold backdrop-blur-sm border border-gold-500/40">
+                          ⛰️ {hs.altitude}
+                        </div>
+
+                        <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-white/90 text-forest-900 text-xs font-bold">
+                          🌡️ {hs.climate.split(' ')[0]}
+                        </div>
+
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider block">
+                            {hs.district}
+                          </span>
+                          <h3 className="font-royal text-2xl font-bold text-white">
+                            {hs.name}
+                          </h3>
+                        </div>
+                      </div>
+
+                      {/* Content */}
+                      <div className="p-6 space-y-4">
+                        <p className="text-xs font-bold text-earth-600 uppercase tracking-wide">
+                          "{hs.tagline}"
+                        </p>
+
+                        <p className="text-earth-700 text-sm leading-relaxed">
+                          {hs.description}
+                        </p>
+
+                        {/* Top Activities */}
+                        <div className="bg-forest-50/70 p-4 rounded-2xl border border-forest-100">
+                          <h4 className="text-xs font-bold text-forest-900 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <Icon name="Compass" className="w-4 h-4 text-forest-700" />
+                            <span>Top Activities:</span>
+                          </h4>
+                          <ul className="space-y-1.5 text-xs text-forest-800">
+                            {hs.activities.map((act, aIdx) => (
+                              <li key={aIdx} className="flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 rounded-full bg-forest-600 flex-shrink-0" />
+                                <span>{act}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Insider Travel Tip */}
+                        <div className="text-xs text-earth-800 bg-earth-100/60 p-3 rounded-xl border border-earth-200">
+                          <strong>💡 Insider Tip:</strong> {hs.travelTip}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6 pt-0">
+                      <button
+                        onClick={() => {
+                          const match = data.destinations.find(d => d.name.toLowerCase().includes(hs.name.toLowerCase()));
+                          if (match) setActiveModal(match);
+                          else showToast(`Planning trips to ${hs.name} is recommended in winter & post-monsoon.`);
+                        }}
+                        className="w-full py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-cream-50 text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
+                      >
+                        Explore Hill Station Guide
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* 8. FAMOUS KARNATAKA FOOD SECTION */}
+          <section id="food" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-xs sm:text-sm font-bold tracking-widest text-gold-600 uppercase">
+                Gastronomy of Karunadu
+              </span>
+              <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-950 mt-2 mb-4">
+                Famous Karnataka Food & Cuisines
+              </h2>
+              <p className="text-earth-700 text-base sm:text-lg">
+                A culinary odyssey from the royal Mysore kitchen creations to fiery coastal fish curries, wholesome finger millet ragi mudde, and GI-tagged Dharwad pedas.
+              </p>
+            </div>
+
+            {/* Food Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {data.foods.map((food) => (
+                <div
+                  key={food.id}
+                  className="bg-white rounded-3xl overflow-hidden shadow-lg border border-earth-200 hover-lift flex flex-col justify-between"
+                >
+                  <div>
+                    {/* Food Image */}
+                    <div className="relative h-56 w-full overflow-hidden bg-forest-950">
+                      <SafeImage
+                        src={food.image}
+                        alt={food.name}
+                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                      
+                      {/* Badge */}
+                      <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-forest-900/90 text-gold-300 text-xs font-bold backdrop-blur-sm border border-gold-500/40">
+                        {food.badge}
+                      </div>
+
+                      <div className="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-white/90 text-forest-900 text-xs font-bold">
+                        {food.type}
+                      </div>
+
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <span className="text-xs font-semibold text-gold-400 block mb-0.5">
+                          📍 {food.region}
+                        </span>
+                        <h3 className="font-royal text-xl font-bold text-white">
+                          {food.name}
+                        </h3>
+                      </div>
+                    </div>
+
+                    {/* Food Info */}
+                    <div className="p-6 space-y-3.5">
+                      <p className="text-earth-700 text-sm leading-relaxed">
+                        {food.description}
+                      </p>
+
+                      <div className="pt-2 border-t border-earth-100 space-y-2 text-xs">
+                        <div>
+                          <strong className="text-forest-900">Traditional Accompaniment:</strong>
+                          <p className="text-earth-800 mt-0.5">{food.servedWith}</p>
+                        </div>
+                        <div>
+                          <strong className="text-forest-900">Where to Taste the Best:</strong>
+                          <p className="text-gold-700 font-medium mt-0.5">{food.whereToTry}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-6 pt-0">
+                    <button
+                      onClick={() => showToast(`Craving authentic ${food.name}? Recommended stop: ${food.whereToTry}`)}
+                      className="w-full py-2.5 rounded-xl bg-earth-100 hover:bg-earth-200 text-earth-900 text-xs font-bold uppercase tracking-wider transition-colors"
+                    >
+                      Foodie Note & Legend
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* 9. TRAVEL BUDGET CALCULATOR SECTION */}
+          <section id="calculator" className="py-20 bg-forest-900 text-cream-50 relative overflow-hidden">
+            {/* Background Accent */}
+            <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-gold-500/10 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-forest-600/20 blur-3xl pointer-events-none" />
+
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              
+              <div className="text-center max-w-3xl mx-auto mb-14">
+                <span className="text-xs sm:text-sm font-bold tracking-widest text-gold-400 uppercase">
+                  Smart Trip Planner
+                </span>
+                <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-cream-50 mt-2 mb-4">
+                  Karnataka Travel Budget Calculator
+                </h2>
+                <p className="text-forest-200 text-base sm:text-lg">
+                  Customize your travel preferences, group size, and duration to calculate real-time estimated trip expenses across Karnataka.
+                </p>
+              </div>
+
+              {/* Calculator Box */}
+              <div className="bg-forest-950/80 rounded-3xl border border-gold-500/30 p-6 sm:p-10 shadow-2xl backdrop-blur-md grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                
+                {/* Left Form Controls (7 Columns) */}
+                <div className="lg:col-span-7 space-y-6">
+                  
+                  {/* Travellers & Days Sliders */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-forest-900/60 p-5 rounded-2xl border border-forest-800">
+                    
+                    {/* Number of Travellers */}
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-xs font-bold uppercase tracking-wider text-forest-200 flex items-center gap-1.5">
+                          <Icon name="Users" className="w-4 h-4 text-gold-400" />
+                          <span>Travellers:</span>
+                        </label>
+                        <span className="text-lg font-royal font-bold text-gold-400">
+                          {budgetCalc.travellers} {budgetCalc.travellers === 1 ? 'Person' : 'People'}
+                        </span>
+                      </div>
+                      <input
+                        type="range"
+                        min="1"
+                        max="15"
+                        value={budgetCalc.travellers}
+                        onChange={(e) => setBudgetCalc({ ...budgetCalc, travellers: parseInt(e.target.value) })}
+                        className="w-full accent-gold-500 cursor-pointer"
+                      />
+                      <div className="flex justify-between text-[11px] text-forest-400 mt-1">
+                        <span>1 Solo</span>
+                        <span>5 Group</span>
+                        <span>15 Large Tour</span>
+                      </div>
+                    </div>
+
+                    {/* Number of Days */}
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-xs font-bold uppercase tracking-wider text-forest-200 flex items-center gap-1.5">
+                          <Icon name="Calendar" className="w-4 h-4 text-gold-400" />
+                          <span>Trip Days:</span>
+                        </label>
+                        <span className="text-lg font-royal font-bold text-gold-400">
+                          {budgetCalc.days} Days
+                        </span>
+                      </div>
+                      <input
+                        type="range"
+                        min="1"
+                        max="21"
+                        value={budgetCalc.days}
+                        onChange={(e) => setBudgetCalc({ ...budgetCalc, days: parseInt(e.target.value) })}
+                        className="w-full accent-gold-500 cursor-pointer"
+                      />
+                      <div className="flex justify-between text-[11px] text-forest-400 mt-1">
+                        <span>1 Weekend</span>
+                        <span>7 Week</span>
+                        <span>21 Grand Tour</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Travel Mode Selector */}
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-forest-200 mb-2.5">
+                      Mode of Transit (Round Trip per Person):
+                    </label>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                      {[
+                        { id: "train", label: "Train / Vande Bharat", icon: "Train", sub: "₹1,400 avg" },
+                        { id: "bus", label: "KSRTC Volvo Bus", icon: "Bus", sub: "₹1,800 avg" },
+                        { id: "cab", label: "Private Rental Cab", icon: "Car", sub: "₹4,000 avg" },
+                        { id: "flight", label: "Domestic Flight", icon: "Plane", sub: "₹6,500 avg" }
+                      ].map((item) => (
+                        <button
+                          key={item.id}
+                          onClick={() => setBudgetCalc({ ...budgetCalc, travelMode: item.id })}
+                          className={`p-3 rounded-xl text-left border transition-all flex flex-col justify-between ${
+                            budgetCalc.travelMode === item.id
+                              ? 'bg-gold-500 text-forest-950 border-gold-400 shadow-md scale-102 font-bold'
+                              : 'bg-forest-900/60 text-forest-200 border-forest-800 hover:bg-forest-800'
+                          }`}
+                        >
+                          <div className="flex items-center gap-1.5 mb-1">
+                            <Icon name={item.icon} className="w-4 h-4" />
+                            <span className="text-xs">{item.label}</span>
+                          </div>
+                          <span className="text-[10px] opacity-80">{item.sub}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Accommodation Type */}
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-forest-200 mb-2.5">
+                      Accommodation Type (Per Room / Night):
+                    </label>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                      {[
+                        { id: "budget", label: "Homestay / Hostel", sub: "₹1,200/night" },
+                        { id: "midrange", label: "3-Star Hotel", sub: "₹2,800/night" },
+                        { id: "heritage", label: "Heritage Resort", sub: "₹6,500/night" },
+                        { id: "luxury", label: "5-Star Palace", sub: "₹14,000/night" }
+                      ].map((item) => (
+                        <button
+                          key={item.id}
+                          onClick={() => setBudgetCalc({ ...budgetCalc, accommodation: item.id })}
+                          className={`p-3 rounded-xl text-left border transition-all ${
+                            budgetCalc.accommodation === item.id
+                              ? 'bg-gold-500 text-forest-950 border-gold-400 shadow-md scale-102 font-bold'
+                              : 'bg-forest-900/60 text-forest-200 border-forest-800 hover:bg-forest-800'
+                          }`}
+                        >
+                          <span className="text-xs block">{item.label}</span>
+                          <span className="text-[10px] opacity-80">{item.sub}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Food Budget Per Day */}
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-forest-200 mb-2.5">
+                      Daily Dining Style (Per Person):
+                    </label>
+                    <div className="grid grid-cols-3 gap-2.5">
+                      {[
+                        { id: "budget", label: "Local Eateries & Tiffins", sub: "₹450 / day" },
+                        { id: "medium", label: "Classic Dining Restaurants", sub: "₹950 / day" },
+                        { id: "luxury", label: "Fine Dining & Royal Buffets", sub: "₹2,000 / day" }
+                      ].map((item) => (
+                        <button
+                          key={item.id}
+                          onClick={() => setBudgetCalc({ ...budgetCalc, foodTier: item.id })}
+                          className={`p-3 rounded-xl text-left border transition-all ${
+                            budgetCalc.foodTier === item.id
+                              ? 'bg-gold-500 text-forest-950 border-gold-400 shadow-md scale-102 font-bold'
+                              : 'bg-forest-900/60 text-forest-200 border-forest-800 hover:bg-forest-800'
+                          }`}
+                        >
+                          <span className="text-xs block">{item.label}</span>
+                          <span className="text-[10px] opacity-80">{item.sub}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Estimated Activity Expenses */}
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-forest-200 mb-2.5">
+                      Activities & Entry Passes (Per Person / Day):
+                    </label>
+                    <div className="grid grid-cols-3 gap-2.5">
+                      {[
+                        { id: "standard", label: "Sightseeing & Monuments", sub: "₹350 / day" },
+                        { id: "medium", label: "Guided Safaris & Treks", sub: "₹1,100 / day" },
+                        { id: "luxury", label: "All-Inclusive & Water Sports", sub: "₹2,500 / day" }
+                      ].map((item) => (
+                        <button
+                          key={item.id}
+                          onClick={() => setBudgetCalc({ ...budgetCalc, activityTier: item.id })}
+                          className={`p-3 rounded-xl text-left border transition-all ${
+                            budgetCalc.activityTier === item.id
+                              ? 'bg-gold-500 text-forest-950 border-gold-400 shadow-md scale-102 font-bold'
+                              : 'bg-forest-900/60 text-forest-200 border-forest-800 hover:bg-forest-800'
+                          }`}
+                        >
+                          <span className="text-xs block">{item.label}</span>
+                          <span className="text-[10px] opacity-80">{item.sub}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Result Card (5 Columns) */}
+                <div className="lg:col-span-5 bg-gradient-to-b from-forest-900 to-forest-950 p-6 sm:p-8 rounded-3xl border border-gold-500/40 shadow-xl flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between pb-4 border-b border-forest-800 mb-6">
+                      <div className="flex items-center gap-2">
+                        <Icon name="Calculator" className="w-5 h-5 text-gold-400" />
+                        <span className="font-royal text-sm font-bold uppercase tracking-wider text-gold-300">
+                          Estimate Summary
+                        </span>
+                      </div>
+                      <span className="text-xs text-forest-300">
+                        {budgetCalc.travellers} Pax • {budgetCalc.days} Days
+                      </span>
+                    </div>
+
+                    {/* Big Price Display */}
+                    <div className="text-center py-4 bg-forest-950/60 rounded-2xl border border-gold-500/30 mb-6">
+                      <span className="text-xs uppercase tracking-widest text-forest-300 block mb-1">
+                        Total Estimated Budget
+                      </span>
+                      <div className="font-royal text-4xl sm:text-5xl font-black text-gold-400">
+                        ₹{budgetResult.totalCost.toLocaleString('en-IN')}
+                      </div>
+                      <span className="text-xs text-forest-300 block mt-2">
+                        Approx <strong className="text-cream-100 font-bold">₹{budgetResult.perPersonCost.toLocaleString('en-IN')}</strong> per traveller
+                      </span>
+                    </div>
+
+                    {/* Breakdown Progress Meters */}
+                    <div className="space-y-3.5 mb-6 text-xs">
+                      <div>
+                        <div className="flex justify-between text-forest-300 mb-1">
+                          <span>Accommodation ({Math.ceil(budgetCalc.travellers / 2)} rooms):</span>
+                          <span className="font-bold text-cream-100">₹{budgetResult.accommodationTotal.toLocaleString('en-IN')}</span>
+                        </div>
+                        <div className="w-full bg-forest-950 h-2 rounded-full overflow-hidden">
+                          <div
+                            className="bg-gold-500 h-full rounded-full"
+                            style={{ width: `${(budgetResult.accommodationTotal / budgetResult.totalCost) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex justify-between text-forest-300 mb-1">
+                          <span>Travel & Transit ({budgetCalc.travelMode}):</span>
+                          <span className="font-bold text-cream-100">₹{budgetResult.transportTotal.toLocaleString('en-IN')}</span>
+                        </div>
+                        <div className="w-full bg-forest-950 h-2 rounded-full overflow-hidden">
+                          <div
+                            className="bg-teal-400 h-full rounded-full"
+                            style={{ width: `${(budgetResult.transportTotal / budgetResult.totalCost) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex justify-between text-forest-300 mb-1">
+                          <span>Food & Dining:</span>
+                          <span className="font-bold text-cream-100">₹{budgetResult.foodTotal.toLocaleString('en-IN')}</span>
+                        </div>
+                        <div className="w-full bg-forest-950 h-2 rounded-full overflow-hidden">
+                          <div
+                            className="bg-amber-400 h-full rounded-full"
+                            style={{ width: `${(budgetResult.foodTotal / budgetResult.totalCost) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex justify-between text-forest-300 mb-1">
+                          <span>Sightseeing & Activities:</span>
+                          <span className="font-bold text-cream-100">₹{budgetResult.activityTotal.toLocaleString('en-IN')}</span>
+                        </div>
+                        <div className="w-full bg-forest-950 h-2 rounded-full overflow-hidden">
+                          <div
+                            className="bg-emerald-400 h-full rounded-full"
+                            style={{ width: `${(budgetResult.activityTotal / budgetResult.totalCost) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 pt-4 border-t border-forest-800">
+                    <button
+                      onClick={() => {
+                        navigator.clipboard?.writeText(
+                          `Karnataka Trip Budget Estimate for ${budgetCalc.travellers} travellers, ${budgetCalc.days} days: ₹${budgetResult.totalCost.toLocaleString('en-IN')} (₹${budgetResult.perPersonCost.toLocaleString('en-IN')}/person). Plan your journey with Explore Karnataka!`
+                        );
+                        showToast("Trip budget breakdown copied to clipboard! 📋");
+                      }}
+                      className="w-full py-3 rounded-xl bg-gold-500 hover:bg-gold-600 text-forest-950 font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-2"
+                    >
+                      <Icon name="Share2" className="w-4 h-4" />
+                      <span>Copy Trip Estimate</span>
+                    </button>
+
+                    <button
+                      onClick={() => setBudgetCalc({ travellers: 2, days: 4, travelMode: "train", accommodation: "midrange", foodTier: "medium", activityTier: "medium" })}
+                      className="w-full py-2 rounded-xl text-forest-400 hover:text-cream-100 text-xs font-semibold transition-colors text-center"
+                    >
+                      Reset to Standard 4-Day Trip
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* 10. IMAGE GALLERY SECTION (With Lightbox & Category Filters) */}
+          <section id="gallery" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-xs sm:text-sm font-bold tracking-widest text-gold-600 uppercase">
+                Visual Symphony
+              </span>
+              <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-950 mt-2 mb-4">
+                Karnataka Photo Gallery
+              </h2>
+              <p className="text-earth-700 text-base sm:text-lg">
+                Gaze upon the captivating beauty of Karunadu. Click any photo to view in high definition lightbox.
+              </p>
+            </div>
+
+            {/* Gallery Category Tabs */}
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+              {[
+                { id: "all", label: "All Photos" },
+                { id: "monuments", label: "Monuments & Heritage" },
+                { id: "waterfalls", label: "Waterfalls" },
+                { id: "mountains", label: "Mountains & Hills" },
+                { id: "beaches", label: "Beaches & Coast" },
+                { id: "temples", label: "Sacred Temples" },
+                { id: "food", label: "Festivals & Food" }
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveGalleryTab(tab.id)}
+                  className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all ${
+                    activeGalleryTab === tab.id
+                      ? 'bg-forest-900 text-gold-300 shadow-md scale-105'
+                      : 'bg-white text-forest-800 hover:bg-forest-100 border border-earth-200'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Gallery Masonry-style Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredGallery.map((item) => (
+                <div
+                  key={item.id}
+                  onClick={() => setLightboxImage(item)}
+                  className="group relative h-64 rounded-2xl overflow-hidden cursor-pointer shadow-md bg-forest-950 border border-earth-200/60"
+                >
+                  <SafeImage
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                    <span className="text-[10px] font-bold text-gold-400 uppercase tracking-wider">
+                      {item.categoryName} • {item.location}
+                    </span>
+                    <h3 className="font-royal text-base font-bold text-white leading-snug">
+                      {item.title}
+                    </h3>
+                    <div className="flex items-center gap-1 text-[11px] text-cream-200 mt-2">
+                      <Icon name="Maximize2" className="w-3.5 h-3.5 text-gold-400" />
+                      <span>Click to enlarge</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* 11. TRAVEL INFORMATION SECTION */}
+          <section id="travel-info" className="py-20 bg-earth-100/50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <span className="text-xs sm:text-sm font-bold tracking-widest text-forest-700 uppercase">
+                  Essential Guide for Explorers
+                </span>
+                <h2 className="font-royal text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-950 mt-2 mb-4">
+                  Karnataka Travel Information
+                </h2>
+                <p className="text-earth-800 text-base sm:text-lg">
+                  Practical guidelines on seasons, transport connectivity, eco-stays, packing tips, and responsible tourism.
+                </p>
+              </div>
+
+              {/* Guide Blocks */}
+              <div className="space-y-12">
+                
+                {/* 1. Best Time to Visit */}
+                <div>
+                  <h3 className="font-royal text-2xl font-bold text-forest-950 mb-6 flex items-center gap-2">
+                    <Icon name="Calendar" className="w-6 h-6 text-gold-600" />
+                    <span>Best Time to Visit Karnataka</span>
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {data.travelGuide.seasons.map((season, idx) => (
+                      <div key={idx} className="bg-white rounded-3xl p-6 shadow-md border border-earth-200 space-y-3">
+                        <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${season.badgeColor}`}>
+                          {season.tag}
+                        </span>
+                        <h4 className="font-royal text-lg font-bold text-forest-950">
+                          {season.title}
+                        </h4>
+                        <div className="text-xs font-semibold text-earth-600">
+                          Expected Temp: {season.temp}
+                        </div>
+                        <p className="text-earth-700 text-sm leading-relaxed">
+                          {season.desc}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 2. Transportation Connectivity */}
+                <div>
+                  <h3 className="font-royal text-2xl font-bold text-forest-950 mb-6 flex items-center gap-2">
+                    <Icon name="Compass" className="w-6 h-6 text-gold-600" />
+                    <span>Transportation Options & Connectivity</span>
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {data.travelGuide.transportation.map((trans, idx) => (
+                      <div key={idx} className="bg-white rounded-3xl p-6 shadow-md border border-earth-200 space-y-3">
+                        <div className="w-10 h-10 rounded-xl bg-forest-50 text-forest-800 flex items-center justify-center">
+                          <Icon name={trans.icon} className="w-5 h-5 text-gold-600" />
+                        </div>
+                        <h4 className="font-royal text-lg font-bold text-forest-950">
+                          {trans.mode}
+                        </h4>
+                        <p className="text-earth-700 text-sm leading-relaxed">
+                          {trans.details}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 3. Stays & Accommodation Suggestions */}
+                <div>
+                  <h3 className="font-royal text-2xl font-bold text-forest-950 mb-6 flex items-center gap-2">
+                    <Icon name="Bed" className="w-6 h-6 text-gold-600" />
+                    <span>Accommodation & Stays in Karnataka</span>
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {data.travelGuide.stays.map((stay, idx) => (
+                      <div key={idx} className="bg-white rounded-3xl p-6 shadow-md border border-earth-200 flex flex-col justify-between">
+                        <div className="space-y-2">
+                          <h4 className="font-royal text-base font-bold text-forest-950">
+                            {stay.type}
+                          </h4>
+                          <p className="text-xs text-gold-700 font-semibold">
+                            {stay.examples}
+                          </p>
+                          <p className="text-earth-700 text-xs leading-relaxed">
+                            {stay.idealFor}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 4. Travel Safety Tips & Responsible Tourism */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Safety */}
+                  <div className="bg-forest-950 text-cream-50 p-8 rounded-3xl border border-gold-500/30 shadow-xl">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="ShieldCheck" className="w-7 h-7 text-gold-400" />
+                      <h3 className="font-royal text-xl font-bold text-cream-50">
+                        Travel Safety & Packing Tips
+                      </h3>
+                    </div>
+                    <ul className="space-y-3 text-sm text-forest-200">
+                      {data.travelGuide.safetyTips.map((tip, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5">
+                          <span className="text-gold-400 font-bold mt-0.5">✓</span>
+                          <span>{tip}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Responsible Tourism */}
+                  <div className="bg-forest-950 text-cream-50 p-8 rounded-3xl border border-gold-500/30 shadow-xl">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon name="Trees" className="w-7 h-7 text-emerald-400" />
+                      <h3 className="font-royal text-xl font-bold text-cream-50">
+                        Responsible & Sustainable Tourism
+                      </h3>
+                    </div>
+                    <ul className="space-y-3 text-sm text-forest-200">
+                      {data.travelGuide.responsibleTourism.map((rule, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5">
+                          <span className="text-emerald-400 font-bold mt-0.5">🌱</span>
+                          <span>{rule}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          {/* 12. FOOTER */}
+          <footer className="bg-forest-950 text-cream-100 border-t border-gold-500/30">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-forest-800">
+                
+                {/* Brand Column (2 cols on lg) */}
+                <div className="lg:col-span-2 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-forest-900 border border-gold-500 flex items-center justify-center text-xl">
+                      🛕
+                    </div>
+                    <span className="font-royal text-2xl font-black tracking-wider text-cream-50">
+                      EXPLORE <span className="text-gold-400">KARNATAKA</span>
+                    </span>
+                  </div>
+                  
+                  <p className="text-forest-300 text-sm leading-relaxed max-w-sm">
+                    Karnataka – Where Every Journey Tells a Story. Dedicated to celebrating the unparalleled heritage, biodiversity, landscapes, and culinary traditions of Karunadu.
+                  </p>
+
+                  <div className="pt-2">
+                    <span className="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-2">
+                      Official Tourist Helpline (24/7):
+                    </span>
+                    <a href="tel:18004254666" className="font-royal text-lg font-bold text-cream-50 hover:text-gold-400 transition-colors">
+                      📞 1800-425-4666 (Toll Free)
+                    </a>
+                  </div>
+                </div>
+
+                {/* Quick Links */}
+                <div>
+                  <h4 className="font-royal text-sm font-bold text-gold-400 uppercase tracking-wider mb-4">
+                    Quick Navigation
+                  </h4>
+                  <ul className="space-y-2 text-sm text-forest-300">
+                    <li><a href="#home" className="hover:text-cream-100 transition-colors">Home</a></li>
+                    <li><a href="#destinations" className="hover:text-cream-100 transition-colors">Tourist Destinations</a></li>
+                    <li><a href="#historical" className="hover:text-cream-100 transition-colors">Historical Places</a></li>
+                    <li><a href="#waterfalls" className="hover:text-cream-100 transition-colors">Waterfalls</a></li>
+                    <li><a href="#hillstations" className="hover:text-cream-100 transition-colors">Hill Stations</a></li>
+                    <li><a href="#food" className="hover:text-cream-100 transition-colors">Famous Karnataka Food</a></li>
+                  </ul>
+                </div>
+
+                {/* Travel Resources */}
+                <div>
+                  <h4 className="font-royal text-sm font-bold text-gold-400 uppercase tracking-wider mb-4">
+                    Trip Tools
+                  </h4>
+                  <ul className="space-y-2 text-sm text-forest-300">
+                    <li><a href="#calculator" className="hover:text-cream-100 transition-colors">Budget Calculator</a></li>
+                    <li><a href="#gallery" className="hover:text-cream-100 transition-colors">Photo Gallery</a></li>
+                    <li><a href="#travel-info" className="hover:text-cream-100 transition-colors">Travel Seasons & Stays</a></li>
+                    <li>
+                      <button onClick={handleSurpriseMe} className="hover:text-gold-400 transition-colors text-left">
+                        Surprise Destination
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={() => setShowFavoritesModal(true)} className="hover:text-gold-400 transition-colors text-left">
+                        My Saved Favorites ({favorites.length})
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Newsletter & Contact */}
+                <div>
+                  <h4 className="font-royal text-sm font-bold text-gold-400 uppercase tracking-wider mb-4">
+                    Karnataka Dispatch
+                  </h4>
+                  <p className="text-xs text-forest-300 mb-3">
+                    Get curated weekend itineraries, waterfall monsoon alerts, and temple festivals delivered to your inbox.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      showToast("Thank you for subscribing to Explore Karnataka! ✨");
+                      e.target.reset();
+                    }}
+                    className="space-y-2"
+                  >
+                    <input
+                      type="email"
+                      required
+                      placeholder="Enter your email..."
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-forest-900 border border-forest-700 text-xs text-cream-50 placeholder-forest-500 focus:outline-none focus:border-gold-500"
+                    />
+                    <button
+                      type="submit"
+                      className="w-full py-2.5 rounded-xl bg-gold-500 hover:bg-gold-600 text-forest-950 font-bold text-xs uppercase tracking-wider transition-all"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+
+              </div>
+
+              {/* Bottom Copyright & Tagline */}
+              <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-forest-400 text-center sm:text-left">
+                <div>
+                  © 2026 <strong>Explore Karnataka</strong>. All rights reserved. Built for Karnataka Tourism Promotion.
+                </div>
+                <div className="font-display italic text-gold-400 text-sm">
+                  "Karnataka – Where Every Journey Tells a Story."
+                </div>
+              </div>
+
+            </div>
+          </footer>
+
+          {/* ================= MODALS & DRAWERS ================= */}
+
+          {/* A. DESTINATION DETAIL MODAL */}
+          {activeModal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+              <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-3xl shadow-2xl border border-gold-500/40 p-6 sm:p-8 animate-slide-up">
+                
+                {/* Close Button */}
+                <button
+                  onClick={() => setActiveModal(null)}
+                  className="absolute top-5 right-5 w-10 h-10 rounded-full bg-forest-100 hover:bg-forest-200 text-forest-900 flex items-center justify-center transition-colors z-10"
+                >
+                  <Icon name="X" className="w-5 h-5" />
+                </button>
+
+                {/* Hero Photo */}
+                <div className="relative h-64 sm:h-80 w-full rounded-2xl overflow-hidden mb-6 bg-forest-950">
+                  <SafeImage
+                    src={activeModal.image}
+                    alt={activeModal.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
+                  
+                  <div className="absolute bottom-5 left-5 right-5 text-white">
+                    <span className="px-3 py-1 rounded-full bg-gold-500 text-forest-950 text-xs font-bold uppercase tracking-wider inline-block mb-2">
+                      📍 {activeModal.district} District
+                    </span>
+                    <h2 className="font-royal text-2xl sm:text-4xl font-extrabold text-white">
+                      {activeModal.name}
+                    </h2>
+                    <p className="text-gold-300 text-sm font-semibold mt-1">
+                      {activeModal.tagline}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Body Content */}
+                <div className="space-y-6 text-forest-950">
+                  <div>
+                    <h3 className="font-royal text-lg font-bold text-forest-950 mb-2">
+                      About the Destination
+                    </h3>
+                    <p className="text-earth-800 text-sm sm:text-base leading-relaxed">
+                      {activeModal.longDesc}
+                    </p>
+                  </div>
+
+                  {/* Highlights Grid */}
+                  <div>
+                    <h3 className="font-royal text-lg font-bold text-forest-950 mb-3">
+                      Key Highlights & Experiences
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {activeModal.highlights.map((hl, idx) => (
+                        <div key={idx} className="flex items-center gap-2 p-3 rounded-xl bg-forest-50 text-forest-900 text-xs sm:text-sm font-medium border border-forest-100">
+                          <Icon name="Check" className="w-4 h-4 text-gold-600 flex-shrink-0" />
+                          <span>{hl}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Visitor Information Cards */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-2xl bg-earth-50 border border-earth-200 text-xs">
+                    <div>
+                      <strong className="block text-forest-950 mb-1">⏱️ Timings:</strong>
+                      <span className="text-earth-800">{activeModal.timings}</span>
+                    </div>
+                    <div>
+                      <strong className="block text-forest-950 mb-1">🎟️ Entry Fee:</strong>
+                      <span className="text-earth-800">{activeModal.entryFee}</span>
+                    </div>
+                    <div>
+                      <strong className="block text-forest-950 mb-1">🗓️ Best Time:</strong>
+                      <span className="text-earth-800">{activeModal.bestTime}</span>
+                    </div>
+                  </div>
+
+                  {/* How to Reach */}
+                  <div className="bg-forest-900 text-cream-50 p-5 rounded-2xl border border-gold-500/30">
+                    <h4 className="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                      <Icon name="Compass" className="w-4 h-4 text-gold-400" />
+                      <span>How to Reach:</span>
+                    </h4>
+                    <p className="text-xs text-forest-200 leading-relaxed">
+                      {activeModal.howToReach}
+                    </p>
+                  </div>
+
+                  {/* Modal Action Controls */}
+                  <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-earth-200">
+                    <button
+                      onClick={() => toggleFavorite(activeModal.id, activeModal.name)}
+                      className={`inline-flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all ${
+                        favorites.includes(activeModal.id)
+                          ? 'bg-red-50 text-red-600 border border-red-200'
+                          : 'bg-forest-50 text-forest-900 border border-forest-200 hover:bg-forest-100'
+                      }`}
+                    >
+                      <Icon name="Heart" className={`w-4 h-4 ${favorites.includes(activeModal.id) ? 'fill-current' : ''}`} />
+                      <span>{favorites.includes(activeModal.id) ? 'Saved in Favorites' : 'Add to Favorites'}</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        setActiveModal(null);
+                        const calcEl = document.getElementById("calculator");
+                        if (calcEl) calcEl.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gold-500 hover:bg-gold-600 text-forest-950 font-bold text-xs uppercase tracking-wider shadow-md transition-all"
+                    >
+                      <span>Calculate Budget for Trip</span>
+                      <Icon name="ArrowRight" className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          )}
+
+          {/* B. SURPRISE ME MODAL */}
+          {surpriseModal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+              <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border-2 border-gold-500 p-6 sm:p-8 animate-slide-up text-center">
+                
+                <button
+                  onClick={() => setSurpriseModal(null)}
+                  className="absolute top-4 right-4 w-9 h-9 rounded-full bg-forest-100 text-forest-900 flex items-center justify-center"
+                >
+                  <Icon name="X" className="w-5 h-5" />
+                </button>
+
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-100 text-gold-800 text-xs font-bold uppercase tracking-widest mb-3">
+                  <Icon name="Sparkles" className="w-3.5 h-3.5 text-gold-600" />
+                  <span>Your Surprise Destination!</span>
+                </div>
+
+                <div className="relative h-56 w-full rounded-2xl overflow-hidden my-4 bg-forest-950 shadow-inner">
+                  <SafeImage
+                    src={surpriseModal.image}
+                    alt={surpriseModal.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-4 right-4 text-left text-white">
+                    <span className="text-xs text-gold-300 font-bold">📍 {surpriseModal.district}</span>
+                    <h3 className="font-royal text-2xl font-bold">{surpriseModal.name}</h3>
+                  </div>
+                </div>
+
+                <p className="text-earth-700 text-sm leading-relaxed mb-6">
+                  {surpriseModal.shortDesc}
+                </p>
+
+                <div className="flex gap-3">
+                  <button
+                    onClick={handleSurpriseMe}
+                    className="flex-1 py-3 rounded-xl bg-forest-100 hover:bg-forest-200 text-forest-900 font-bold text-xs uppercase tracking-wider transition-colors"
+                  >
+                    🎲 Spin Again
+                  </button>
+                  <button
+                    onClick={() => {
+                      const item = surpriseModal;
+                      setSurpriseModal(null);
+                      setActiveModal(item);
+                    }}
+                    className="flex-1 py-3 rounded-xl bg-gold-500 hover:bg-gold-600 text-forest-950 font-bold text-xs uppercase tracking-wider transition-all shadow-md"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* C. FAVORITES MODAL */}
+          {showFavoritesModal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+              <div className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-gold-500/40 p-6 sm:p-8 animate-slide-up max-h-[85vh] flex flex-col">
+                
+                <div className="flex items-center justify-between pb-4 border-b border-earth-200 mb-4">
+                  <div className="flex items-center gap-2.5">
+                    <Icon name="Heart" className="w-6 h-6 text-red-500 fill-red-500" />
+                    <h3 className="font-royal text-xl font-bold text-forest-950">
+                      My Favorite Places ({favorites.length})
+                    </h3>
+                  </div>
+                  <button
+                    onClick={() => setShowFavoritesModal(false)}
+                    className="w-9 h-9 rounded-full bg-forest-100 text-forest-900 flex items-center justify-center"
+                  >
+                    <Icon name="X" className="w-5 h-5" />
+                  </button>
+                </div>
+
+                {/* Favorites List */}
+                <div className="overflow-y-auto flex-1 space-y-3 pr-1">
+                  {favorites.length > 0 ? (
+                    data.destinations
+                      .filter(d => favorites.includes(d.id))
+                      .map((dest) => (
+                        <div
+                          key={dest.id}
+                          className="flex items-center justify-between gap-4 p-3.5 rounded-2xl bg-forest-50/60 border border-forest-100 hover:bg-forest-50 transition-colors"
+                        >
+                          <div className="flex items-center gap-3">
+                            <SafeImage
+                              src={dest.image}
+                              alt={dest.name}
+                              className="w-16 h-16 rounded-xl object-cover"
+                            />
+                            <div>
+                              <h4 className="font-royal font-bold text-forest-950 text-base">
+                                {dest.name}
+                              </h4>
+                              <span className="text-xs text-earth-700">
+                                📍 {dest.district} • {dest.bestTime.split(' ')[0]}
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="flex items-center gap-2">
+                            <button
+                              onClick={() => {
+                                setShowFavoritesModal(false);
+                                setActiveModal(dest);
+                              }}
+                              className="px-3 py-1.5 rounded-lg bg-forest-800 text-cream-50 text-xs font-bold uppercase tracking-wider hover:bg-forest-900"
+                            >
+                              Details
+                            </button>
+                            <button
+                              onClick={() => toggleFavorite(dest.id, dest.name)}
+                              className="p-2 text-red-500 hover:text-red-700"
+                              title="Remove from favorites"
+                            >
+                              <Icon name="X" className="w-4 h-4" />
+                            </button>
+                          </div>
+                        </div>
+                      ))
+                  ) : (
+                    <div className="text-center py-12">
+                      <p className="text-earth-600 text-sm">
+                        You have not saved any favorite destinations yet. Click the heart icon on any destination card to save it here!
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                {favorites.length > 0 && (
+                  <div className="pt-4 border-t border-earth-200 flex justify-between items-center text-xs">
+                    <button
+                      onClick={() => {
+                        setFavorites([]);
+                        showToast("Cleared all favorite destinations.");
+                      }}
+                      className="text-red-600 hover:text-red-800 font-semibold"
+                    >
+                      Clear All Favorites
+                    </button>
+                    <button
+                      onClick={() => setShowFavoritesModal(false)}
+                      className="px-4 py-2 rounded-xl bg-forest-800 text-cream-50 font-bold uppercase tracking-wider"
+                    >
+                      Close
+                    </button>
+                  </div>
+                )}
+
+              </div>
+            </div>
+          )}
+
+          {/* D. LIGHTBOX MODAL */}
+          {lightboxImage && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 backdrop-blur-md animate-fade-in"
+              onClick={() => setLightboxImage(null)}
+            >
+              <div
+                className="relative max-w-4xl max-h-[90vh] flex flex-col items-center"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  onClick={() => setLightboxImage(null)}
+                  className="absolute -top-12 right-0 text-white hover:text-gold-400 p-2 text-sm flex items-center gap-1 font-bold"
+                >
+                  <Icon name="X" className="w-6 h-6" />
+                  <span>Close (ESC)</span>
+                </button>
+
+                <SafeImage
+                  src={lightboxImage.image}
+                  alt={lightboxImage.title}
+                  className="max-h-[70vh] w-auto max-w-full rounded-2xl shadow-2xl object-contain border border-gold-500/30"
+                />
+
+                <div className="text-center mt-4 text-white max-w-xl">
+                  <span className="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-1">
+                    {lightboxImage.categoryName} • {lightboxImage.location}
+                  </span>
+                  <h3 className="font-royal text-xl sm:text-2xl font-bold">
+                    {lightboxImage.title}
+                  </h3>
+                  <p className="text-gray-300 text-xs sm:text-sm mt-1">
+                    {lightboxImage.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+        </div>
+      );
+    }
+
+    // Render the React application
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

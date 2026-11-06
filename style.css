@@ -1,0 +1,128 @@
+/* Karnataka Tourism Premium Theme Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-forest-dark: #122b1c;
+  --color-forest-primary: #1e4d30;
+  --color-forest-light: #2b7244;
+  --color-gold-accent: #d4af37;
+  --color-gold-light: #f5b041;
+  --color-earth-brown: #582f0e;
+  --color-cream-bg: #faf7f0;
+  --color-cream-card: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #faf7f0;
+  color: #1a2a1f;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede2;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b7244;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e4d30;
+}
+
+/* Serif Headings */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-royal {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.05em;
+}
+
+/* Glassmorphism */
+.glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(220, 210, 190, 0.5);
+}
+
+.glass-dark {
+  background: rgba(18, 43, 28, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Golden gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa8012 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-forest-gradient {
+  background: linear-gradient(135deg, #1e4d30 0%, #2b7244 50%, #449d63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Golden border shimmer */
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35);
+}
+
+.hero-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 34, 22, 0.65) 0%,
+    rgba(18, 43, 28, 0.82) 65%,
+    rgba(10, 25, 16, 0.96) 100%
+  );
+}
+
+/* Smooth card transitions */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(18, 43, 28, 0.15), 0 0 1px 1px rgba(212, 175, 55, 0.2);
+}
+
+/* Pulse animation for highlights */
+@keyframes subtlePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.88; transform: scale(1.02); }
+}
+.pulse-subtle {
+  animation: subtlePulse 4s infinite ease-in-out;
+}
+
+/* Lightbox backdrop animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
